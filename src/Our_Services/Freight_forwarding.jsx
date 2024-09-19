@@ -32,7 +32,7 @@ function Freight_forwarding() {
         className="bg-no-repeat bg-center bg-cover "
         style={{ backgroundImage: `url(${BgImg})` }}
       >
-        <div className="flex sm:flex-row flex-col items-center justify-around sm:pt-24 pt-4 sm:pb-24 m-auto pb-10 w-[90%]">
+        <div className="flex sm:flex-row flex-col items-center justify-around sm:pt-24 pt-4 sm:pb-24 m-auto pb-0 w-[90%]">
           <div className="sm:w-3/5	w-full py-6">
             <p className="text-white sm:text-lg text-sm">Our Services</p>
             <h1 className="text-white sm:text-[3.4vw] font-bold  leading-none text-4xl">
@@ -43,14 +43,14 @@ function Freight_forwarding() {
         </div>
       </div>
 
-      <div className="flex sm:flex-row flex-col justify-center items-center max-w-screen-lg m-auto py-10">
-        <div className="sm:w-[50%]  pr-10">
+      <div className="flex sm:flex-row flex-col justify-center items-center max-w-screen-lg m-auto py-10 px-5 sm:px-0">
+        <div className="sm:w-[50%]  sm:pr-10 pr-0">
           <h3 className="sm:text-4xl text-3xl font-bold text-[#1C1F35] py-2 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-[#ff3d3d] after:mt-2">
             International Cargo Movements in Just Few Simple Steps
           </h3>
           <p className="text-base  mt-2">
             Welcome to OmTrans, your trusted partner in global logistics
-            solutions. With an international footprint spanning over 90+
+            solutions. With an international footprint spanning over 150+
             countries, OmTrans delivers comprehensive freight forwarding
             services through our own offices and strategic partnerships. We
             specialize in providing a full range of logistics services,
@@ -66,7 +66,7 @@ function Freight_forwarding() {
       <div className="bg-gray-100">
         <div className=" max-w-screen-lg m-auto sm:py-14 py-14">
           <div className="flex flex-wrap items-center justify-center flex-col sm:flex-row py-3   ">
-            <div className="py-4  px-6 w-[310px] h-[250px] border-2 border-blue-700 mt-2 mx-2">
+            <div className="py-4  px-6 w-[310px] h-[250px] border-2 border-blue-700 sm:mt-2 mt-0 mx-2">
               <img src={Icon_4} alt="" />
               <div className="pt-2">
                 <h3 className="text-2xl pb-2 font-semibold">Air Freight</h3>
@@ -77,7 +77,7 @@ function Freight_forwarding() {
                 </p>
               </div>
             </div>
-            <div className="  py-4 px-6 w-[310px] h-[250px] border-2 border-blue-700  mt-2 mx-2">
+            <div className="  py-4 px-6 w-[310px] h-[250px] border-2 border-blue-700  sm:mt-2 mt-5 mx-2">
               <img src={Icon_1} alt="" />
               <div className="pt-2">
                 <h3 className="text-2xl pb-2 font-semibold">Ocean Freight</h3>
@@ -89,7 +89,7 @@ function Freight_forwarding() {
               </div>
             </div>
             <div>
-              <div className=" py-4 px-6 w-[310px] h-[250px] border-2 border-blue-700 mt-2 mx-2">
+              <div className=" py-4 px-6 w-[310px] h-[250px] border-2 border-blue-700 sm:mt-2 mt-5 mx-2">
                 <img src={Icon_3} alt="" />
                 <div className="pt-2">
                   <h3 className="text-2xl pb-2 font-semibold">Road Freight</h3>
@@ -120,7 +120,7 @@ function Freight_forwarding() {
           />
           <Global_Strength
             icon={globe}
-            heading={"90+"}
+            heading={"150+"}
             text={"Countries Presence Worldwide"}
           />
           <Global_Strength
@@ -136,19 +136,16 @@ function Freight_forwarding() {
       {/* Services 2*/}
 
       <div className="bg-gray-100 py-4">
-        <div className="flex sm:flex-row flex-col justify-center items-center w-[90%] m-auto py-10">
-          <div className="sm:w-[38%] pt-6 sm:pt-0">
+        <div className="flex sm:flex-row flex-col justify-center items-center max-w-screen-lg m-auto sm:py-10 py-7 px-3 sm:px-0">
+          <div className=" pt-0 sm:pt-0">
             <img src={FF_2} alt="about us image" />
           </div>
-          <div className="sm:w-[42%]  pl-10">
-            <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-32">
-              Our Services
-            </p>
-            <h3 className="sm:text-4xl text-3xl font-bold	text-[#1C1F35]	py-2">
+          <div className="sm:w-[50%] w-full sm:pl-10 pl-0 sm:py-1 py-5">
+            <h3 className="sm:text-4xl text-3xl font-bold text-[#1C1F35] py-2 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-[#ff3d3d] after:mt-3">
               We Support Importers/Exporters from Worldwide Locations
             </h3>
             <div className="list-inside list-disc">
-              <ul className="list-disc pl-6">
+              <ul className="list-disc pl-6 mt-3">
                 <li className="">
                   We bring a modern touch to the world of freight forwarding,
                   ensuring cutting-edge solutions for logistics and transport.
@@ -188,10 +185,10 @@ function Freight_forwarding() {
         </div>
       </div>
 
-      {/* Companies Logo*/}
+      {/* Associate Companies*/}
 
-      <div className="py-4">
-        <p className="sm:text-4xl text-3xl  font-bold my-4 text-center text-[#1C1F35] ">
+      <div>
+        <p className="text-4xl font-bold pt-7 text-center text-red-600 ">
           Associate Companies
         </p>
         <Companies_logo />
@@ -206,7 +203,7 @@ function Freight_forwarding() {
       {/* Faq */}
 
       <div>
-        <div className="py-20  m-auto flex justify-center gap-10 sm:flex-row flex-col">
+        <div className="py-20  m-auto flex justify-center gap-10 sm:flex-row flex-col max-w-screen-lg">
           <div>
             <div className="sm:w-[500px] sm:px-0 px-5">
               <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-20 mb-4 sm:mb-0  ">
@@ -221,7 +218,7 @@ function Freight_forwarding() {
             </div>
           </div>
 
-          <div className="w-[35%]">
+          <div className="">
             <img src={freight_forwarding} alt="" />
           </div>
         </div>

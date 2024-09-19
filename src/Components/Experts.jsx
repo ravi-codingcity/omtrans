@@ -9,10 +9,10 @@ function Experts(props) {
         <p className="font-bold text-xl  px-4">{props.name}</p>
         <span className="text-base px-4">{props.title}</span>
       </div>
-      <div className="bg-[#FFB629] w-[130px] h-12 relative left-[165px] py-1 -top-10  flex justify-evenly items-center">
-        <FaFacebook className="text-2xl  text-[#1C1F35] hover:scale-110 duration-300 cursor-pointer" />
-        <FaLinkedin className="text-2xl  text-[#1C1F35] hover:scale-110 duration-300 cursor-pointer" />
-        <FaInstagram className="text-2xl  text-[#1C1F35] hover:scale-110 duration-300 cursor-pointer" />
+      <div className="bg-[#FFB629] w-[110px] h-10 relative left-[165px] py-1 -top-10  flex justify-center  items-center">
+        <FaFacebook className="text-2xl  text-[#1C1F35] hover:scale-110 duration-300 cursor-pointer mx-1" />
+        <FaLinkedin className="text-2xl  text-[#1C1F35] hover:scale-110 duration-300 cursor-pointer mx-1" />
+        <FaInstagram className="text-2xl  text-[#1C1F35] hover:scale-110 duration-300 cursor-pointer mx-1" />
       </div>
     </div>
   );

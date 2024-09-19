@@ -21,7 +21,7 @@ function Img_card({ img, title, description, onClick, delay }) {
       variants={cardVariants}
     >
       <div className="py-5 px-3" onClick={onClick}>
-        <div className="bg-slate-200 text-center w-[320px] h-[470px]">
+        <div className="bg-slate-200 text-center w-[320px] h-[470px] rounded-md overflow-hidden">
           <img src={img} alt="" className="w-full" />
           <div className="text-center">
             <p className="text-red-600 font-semibold py-3 px-2 text-xl">

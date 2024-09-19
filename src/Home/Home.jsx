@@ -127,13 +127,13 @@ function Home() {
       </div>
 
       <div className="flex justify-center flex-col sm:flex-row  max-w-screen-lg m-auto">
-        <div className=" sm:pl-10   bg-white sm:pt-6 pt-6 w-1/2">
-          <h3 className="sm:text-4xl text-2xl font-bold	text-red-600	py-4">
+        <div className=" sm:pl-10   bg-white sm:pt-6 pt-6 sm:w-1/2 w-full px-5 sm:px-0">
+          <h3 className="sm:text-4xl text-3xl font-bold text-[#1C1F35] py-2 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-[#ff3d3d] after:mt-3">
             Why Choose Us
           </h3>
           <p className="text-base">
             Welcome to OmTrans, your trusted partner in global logistics
-            solutions. With an international footprint spanning over 90+
+            solutions. With an international footprint spanning over 150+
             countries, We specialize in providing a full range of logistics
             services, including air, ocean, and land transportation.
           </p>
@@ -146,7 +146,7 @@ function Home() {
             <Choose_icon icon={Icon_10} title="No Hidden Costs" />
           </div>
         </div>
-        <div className="flex px-8 bg-white w-1/2 sm:py-10 py-6">
+        <div className="flex px-8 bg-white sm:w-1/2 sm:py-10 py-0  pb-10 w-full">
           <img className=" " src={Image1} alt="" />
         </div>
       </div>
@@ -220,7 +220,6 @@ function Home() {
             img={P6}
             delay={0.6}
           />
-
         </div>
       </div>
 
@@ -236,7 +235,7 @@ function Home() {
           />
           <Global_Strength
             icon={globe}
-            heading={"90+"}
+            heading={"150+"}
             text={"Countries Presence Worldwide"}
           />
           <Global_Strength
@@ -252,7 +251,7 @@ function Home() {
       {/* Testimonials */}
 
       <div className="flex items-center justify-center flex-wrap">
-        <div className="py-6  sm:w-[70%] w-[100%]">
+        <div className="py-t pb-10  sm:max-w-screen-lg max-w-screen-sm">
           <Testimonials />
         </div>
       </div>
@@ -263,7 +262,7 @@ function Home() {
         <h1 className="bg-gray-300 border-l-4 border-red-600 my-2 text-center w-36 m-auto ">
           Our Blogs
         </h1>
-        <p className="text-4xl font-bold my-4 text-center text-[#1C1F35]">
+        <p className="text-4xl font-bold my-4 text-center text-red-600 ">
           Our Latest News
         </p>
 
@@ -306,10 +305,10 @@ function Home() {
         </div>
       </div>
 
-      {/* Meet Our Team*/}
+      {/* Associate Companies*/}
 
       <div>
-        <p className="text-4xl font-bold py-6 text-center text-[#1C1F35] ">
+        <p className="text-4xl font-bold pt-7 text-center text-red-600 ">
           Associate Companies
         </p>
         <Companies_logo />

@@ -52,18 +52,19 @@ export default function TrackShipment() {
   };
 
   return (
-    <div className="bg-white   shadow-lg  mx-auto my-8 h-48">
+    <div className="bg-white h-48 shadow-lg mx-auto my-3 sm:my-6">
+
       <motion.span
         initial={{ opacity: 0, y: -200 }} // Start with opacity 0 and 20px above the original position
         animate={{ opacity: 1, y: 0 }} // Animate to full opacity and original position
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <form onSubmit={handleSubmit} className="text-center">
-          <h2 className="text-xl md:text-3xl sm:mb-4 text-red-600 ">
+        <form onSubmit={handleSubmit} className="text-center ">
+          <h2 className="text-xl md:text-3xl sm:mb-4 mb-0 text-red-600 ">
             Track Your Shipment
           </h2>
-          <div className="pb-3 max-w-screen-lg m-auto">
-            <div className="flex flex-wrap justify-center space-x-4 my-3">
+          <div className="sm:pb-3 pb-0 sm:max-w-screen-lg max-w-screen-sm px-1 m-auto">
+            <div className="flex flex-wrap justify-center space-x-4 my-2 sm:my-3">
               <label className="inline-flex items-center space-x-2">
                 <input
                   type="radio"
@@ -110,8 +111,8 @@ export default function TrackShipment() {
             </div>
           </div>
 
-          <div className="max-w-screen-md m-auto">
-            <div className="flex items-center justify-center  space-x-4">
+          <div className="max-w-screen-md m-auto ">
+            <div className="flex sm:flex-row flex-col items-center justify-center  space-x-4">
               {/* Input Field */}
               <div className="flex-initial bg-white py-1 border border-blue-600 w-[315px]">
                 <input
@@ -128,7 +129,7 @@ export default function TrackShipment() {
               <div>
                 <button
                   type="submit"
-                  className="bg-blue-600 text-white px-6 py-2  hover:border-b-1 border-blue-600 transition-all duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-[3px] after:-mb-2 after:w-full after:bg-[#2663EB] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200"
+                  className="bg-blue-600 text-white px-6 py-3 sm:mt-0 mt-3  hover:border-b-1 border-blue-600 transition-all duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-[3px] after:-mb-2 after:w-full after:bg-[#2663EB] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200"
                 >
                   Track Shipment
                 </button>

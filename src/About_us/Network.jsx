@@ -8,7 +8,6 @@ import taiwan_flag_icon from "../assets/taiwan-flag-icon.png";
 import hongkong_flag_icon from "../assets/hong-kong-flag-icon.png";
 import Navbar from "../Navbar/Navbar";
 import BgImg from "../assets/our_services.jpg";
-import TrackingForm from "../Components/TrackingForm";
 import Footer from "../Footer/Footer";
 
 const Network = () => {
@@ -30,21 +29,19 @@ const Network = () => {
         className="bg-no-repeat bg-center bg-cover "
         style={{ backgroundImage: `url(${BgImg})` }}
       >
-        <div className="flex sm:flex-row flex-col items-center justify-around sm:pt-24 pt-4 sm:pb-24 m-auto pb-10 w-[90%]">
+        <div className="flex sm:flex-row flex-col items-center justify-around sm:pt-24 pt-4 sm:pb-24 m-auto pb-0 w-[90%]">
           <div className="sm:w-3/5	w-full py-6">
             <p className="text-white sm:text-lg text-sm">OmTrans</p>
             <h1 className="text-white sm:text-[3.4vw] font-bold  leading-none text-4xl">
               Global Footprint
             </h1>
           </div>
-          <div className="sm:w-2/5 h-40">
-            
-          </div>
+          <div className="sm:w-2/5 h-40"></div>
         </div>
       </div>
 
       <div className="relative">
-        <div className="relative sm:h-[688px]  h-[250px] my-10">
+        <div className="relative sm:h-[670px]  h-[200px] my-10 sm:mb-0 mb-0">
           <div className="absolute left-[10%] right-[10%]">
             <img className="max-w-full h-auto" src={Bg_map} alt="World Map" />
 

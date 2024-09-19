@@ -31,7 +31,7 @@ function Supply_chain_management() {
         className="bg-no-repeat bg-center bg-cover "
         style={{ backgroundImage: `url(${BgImg})` }}
       >
-        <div className="flex sm:flex-row flex-col items-center justify-around sm:pt-24 pt-4 sm:pb-24 m-auto pb-10 w-[90%]">
+        <div className="flex sm:flex-row flex-col items-center justify-around sm:pt-24 pt-4 sm:pb-24 m-auto pb-0 w-[90%]">
           <div className="sm:w-3/5	w-full py-6">
             <p className="text-white sm:text-lg text-sm">Our Services</p>
             <h1 className="text-white sm:text-[3.4vw] font-bold  leading-none text-4xl">
@@ -42,8 +42,8 @@ function Supply_chain_management() {
         </div>
       </div>
 
-      <div className="flex sm:flex-row flex-col justify-center items-center max-w-screen-lg m-auto py-10">
-        <div className="sm:w-[50%]  pr-10">
+      <div className="flex sm:flex-row flex-col justify-center items-center max-w-screen-lg m-auto py-10 sm:pt-10 pt-5 px-3 sm:px-0">
+        <div className="sm:w-[50%]  sm:pr-10 pr-0">
           <h3 className="sm:text-4xl text-3xl font-bold text-[#1C1F35] py-2 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-[#ff3d3d] after:mt-3">
             Connecting and Simplifying Global Supply Chains
           </h3>
@@ -64,7 +64,7 @@ function Supply_chain_management() {
       <div className="bg-gray-100">
         <div className=" max-w-screen-lg m-auto  sm:py-14 py-14">
           <div className="flex flex-wrap items-center justify-center flex-col sm:flex-row py-3   ">
-            <div className="py-4  px-6 w-[310px] h-[265px] border-2 border-blue-700 mt-2 mx-2">
+            <div className="py-4  px-6 w-[310px] h-[265px] border-2 border-blue-700 sm:mt-2 mt-0 mx-2">
               <img src={Icon_4} alt="" />
               <div className="pt-2">
                 <h3 className="text-2xl pb-2 font-semibold">
@@ -76,7 +76,7 @@ function Supply_chain_management() {
                 </p>
               </div>
             </div>
-            <div className="  py-4 px-6 w-[310px] h-[265px] border-2 border-blue-700  mt-2 mx-2">
+            <div className="  py-4 px-6 w-[310px] h-[265px] border-2 border-blue-700  sm:mt-2 mt-5 mx-2">
               <img src={Icon_1} alt="" />
               <div className="pt-2">
                 <h3 className="text-2xl pb-2 font-semibold">Customisation</h3>
@@ -87,7 +87,7 @@ function Supply_chain_management() {
               </div>
             </div>
             <div>
-              <div className=" py-4 px-6 w-[310px] h-[265px] border-2 border-blue-700 mt-2 mx-2">
+              <div className=" py-4 px-6 w-[310px] h-[265px] border-2 border-blue-700 sm:mt-2 mt-5 mx-2">
                 <img src={Icon_3} alt="" />
                 <div className="pt-2">
                   <h3 className="text-2xl pb-2 font-semibold">
@@ -118,7 +118,7 @@ function Supply_chain_management() {
           />
           <Global_Strength
             icon={globe}
-            heading={"90+"}
+            heading={"150+"}
             text={"Countries Presence Worldwide"}
           />
           <Global_Strength
@@ -134,19 +134,16 @@ function Supply_chain_management() {
       {/* Services 2*/}
 
       <div className="bg-gray-100 py-4">
-        <div className="flex sm:flex-row flex-col justify-center items-center w-[90%] m-auto py-10">
-          <div className="sm:w-[38%] pt-6 sm:pt-0">
+      <div className="flex sm:flex-row flex-col justify-center items-center max-w-screen-lg m-auto sm:py-10 py-7 px-3 sm:px-0">
+          <div className="pt-0 sm:pt-0">
             <img src={FF_2} alt="about us image" />
           </div>
-          <div className="sm:w-[42%]  pl-10">
-            <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-32">
-              Our Services
-            </p>
-            <h3 className="sm:text-4xl text-3xl font-bold	text-[#1C1F35]	py-2">
+          <div className="sm:w-[50%]  sm:pl-6 pl-0">
+            <h3 className="sm:text-4xl text-3xl font-bold text-[#1C1F35] py-2 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-[#ff3d3d] after:mt-4">
               End-to-end services for your unique business needs
             </h3>
-            <div className="list-inside list-disc">
-              <ul className="list-disc pl-6">
+            <div className="list-inside list-disc mt-0 sm:mt-2">
+              <ul className="list-disc pl-6 ">
                 <li className="">
                   Your business is like no other. Supply Chain Management gives
                   you an intricate ecosystem designed to make your supply chain
@@ -166,7 +163,7 @@ function Supply_chain_management() {
       {/* Extra Features*/}
 
       <div className="max-w-screen-lg pb-16 m-auto py-5">
-        <h3 className="sm:text-4xl text-3xl font-bold	text-[#1C1F35]	 text-center py-4">
+        <h3 className="sm:text-4xl text-3xl font-bold	text-[#1C1F35]	 text-center py-4 px-0">
           Some Benefits to Choose OmTrans
         </h3>
         <div className="flex flex-wrap items-center justify-center  text-center  space-x-4">
@@ -188,10 +185,10 @@ function Supply_chain_management() {
         </div>
       </div>
 
-      {/* Companies Logo*/}
+      {/* Associate Companies*/}
 
-      <div className="py-4">
-        <p className="sm:text-4xl text-3xl  font-bold my-4 text-center text-[#1C1F35] ">
+      <div>
+        <p className="text-4xl font-bold pt-7 text-center text-red-600 ">
           Associate Companies
         </p>
         <Companies_logo />
@@ -206,7 +203,7 @@ function Supply_chain_management() {
       {/* Faq */}
 
       <div>
-        <div className="py-20  m-auto flex justify-center gap-10 sm:flex-row flex-col">
+        <div className="py-20  m-auto flex justify-center gap-10 sm:flex-row flex-col max-w-screen-lg">
           <div>
             <div className="sm:w-[500px] sm:px-0 px-5">
               <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-20 mb-4 sm:mb-0  ">
@@ -221,7 +218,7 @@ function Supply_chain_management() {
             </div>
           </div>
 
-          <div className="w-[35%]">
+          <div className="">
             <img src={freight_forwarding} alt="" />
           </div>
         </div>

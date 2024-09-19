@@ -29,7 +29,7 @@ function Project_cargo_ODC_Handle() {
         className="bg-no-repeat bg-center bg-cover "
         style={{ backgroundImage: `url(${BgImg})` }}
       >
-        <div className="flex sm:flex-row flex-col items-center justify-around sm:pt-24 pt-4 sm:pb-24 m-auto pb-10 w-[90%]">
+        <div className="flex sm:flex-row flex-col items-center justify-around sm:pt-24 pt-4 sm:pb-24 m-auto pb-0 w-[90%]">
           <div className="sm:w-3/5	w-full py-6">
             <p className="text-white sm:text-lg text-sm">Our Services</p>
             <h1 className="text-white sm:text-[3.4vw] font-bold  leading-none text-4xl">
@@ -40,8 +40,8 @@ function Project_cargo_ODC_Handle() {
         </div>
       </div>
 
-      <div className="flex sm:flex-row flex-col justify-center items-center max-w-screen-lg m-auto py-10">
-        <div className="sm:w-[50%]  pr-10">
+      <div className="flex sm:flex-row flex-col justify-center items-center max-w-screen-lg m-auto sm:py-10 py-3 px-3 sm:px-0">
+        <div className="sm:w-[50%]  sm:pr-10 pr-0 ">
           <div>
             <h3 className="sm:text-4xl text-3xl font-bold text-[#1C1F35] py-2 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-[#ff3d3d] after:mt-2">
               Handling of Over Dimensional Cargo
@@ -57,14 +57,14 @@ function Project_cargo_ODC_Handle() {
             </p>
           </div>
         </div>
-        <div className="pt-6 sm:pt-0">
+        <div className="pt-6 sm:pt-0 pb-12 sm:pb-0">
           <img src={FF_1} alt="about us image" />
         </div>
       </div>
 
       {/* Services */}
       <div className="bg-gray-100">
-        <div className=" max-w-screen-lg m-auto   sm:py-14 py-14">
+        <div className=" max-w-screen-lg m-auto   sm:py-14 py-10">
           <p className="sm:text-4xl text-3xl  font-bold my-4 text-center text-[#1C1F35] ">
             Handled Projects
           </p>
@@ -134,7 +134,7 @@ function Project_cargo_ODC_Handle() {
           />
           <Global_Strength
             icon={globe}
-            heading={"90+"}
+            heading={"150+"}
             text={"Countries Presence Worldwide"}
           />
           <Global_Strength
@@ -150,16 +150,16 @@ function Project_cargo_ODC_Handle() {
       {/* Services 2*/}
 
       <div className="bg-gray-100 py-4">
-        <div className="flex sm:flex-row flex-col justify-center items-center w-[90%] m-auto py-10">
-          <div className="sm:w-[38%] pt-6 sm:pt-0">
+        <div className="flex sm:flex-row flex-col justify-center items-center max-w-screen-lg m-auto py-10">
+          <div className=" pt-0 sm:pt-0 px-3 sm:px-0">
             <img src={FF_2} alt="about us image" />
           </div>
-          <div className="sm:w-[42%]  pl-10">
-            <h3 className="sm:text-4xl text-3xl font-bold text-[#1C1F35] py-2 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-[#ff3d3d] after:mt-4">
+          <div className="sm:w-[50%]  sm:pl-10 pl-3">
+            <h3 className="sm:text-4xl text-3xl font-bold text-[#1C1F35] py-2 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-[#ff3d3d] after:mt-5">
               Reliable Project Cargo Management
             </h3>
             <div className="list-inside list-disc">
-              <p className="text-base  mt-2">
+              <p className="text-base  mt-5">
                 Our focus is on simplifying logistics for heavy and bulk cargo
                 in standard and non-standard quantities, guaranteeing the timely
                 delivery of shipments.
@@ -175,7 +175,7 @@ function Project_cargo_ODC_Handle() {
         <h3 className="sm:text-4xl text-3xl font-bold	text-[#1C1F35]	 text-center py-4">
           Some Benefits to Choose OmTrans
         </h3>
-        <div className="flex flex-wrap items-center justify-center  text-center  space-x-4">
+        <div className="flex flex-wrap items-center justify-center  text-center  sm:space-x-4 space-x-0">
           <Extra_features
             icon={<GiTakeMyMoney className="text-4xl" />}
             heading="Flexible Pricing"
@@ -194,10 +194,10 @@ function Project_cargo_ODC_Handle() {
         </div>
       </div>
 
-      {/* Companies Logo*/}
+      {/* Associate Companies*/}
 
-      <div className="py-4">
-        <p className="sm:text-4xl text-3xl  font-bold my-4 text-center text-[#1C1F35] ">
+      <div>
+        <p className="text-4xl font-bold pt-7 text-center text-red-600 ">
           Associate Companies
         </p>
         <Companies_logo />
@@ -212,7 +212,7 @@ function Project_cargo_ODC_Handle() {
       {/* Faq */}
 
       <div>
-        <div className="py-20  m-auto flex justify-center gap-10 sm:flex-row flex-col">
+        <div className="py-20  m-auto flex justify-center gap-10 sm:flex-row flex-col max-w-screen-lg">
           <div>
             <div className="sm:w-[500px] sm:px-0 px-5">
               <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-20 mb-4 sm:mb-0  ">
@@ -227,7 +227,7 @@ function Project_cargo_ODC_Handle() {
             </div>
           </div>
 
-          <div className="w-[35%]">
+          <div className="">
             <img src={freight_forwarding} alt="" />
           </div>
         </div>

@@ -29,7 +29,7 @@ function Navbar() {
     <div>
       <div>
         <div className="flex flex-wrap items-center justify-between text-4xl text-black cursor-pointer sm:hidden px-4">
-          <img src={logo} alt="" className="w-28 py-3" />
+          <img src={logo} alt="" className="w-24 py-3" />
           {showNav ? (
             <RxCross2 onClick={toggleNav} />
           ) : (
@@ -39,7 +39,7 @@ function Navbar() {
       </div>
 
       <div
-        className={`absolute  w-full sm:static sm:flex sm:justify-around items-center text-black bg-white sm:bg-white sm:text-base text-base font-medium	 z-10  ${
+        className={`absolute  w-full sm:static sm:flex sm:justify-around items-center text-black bg-slate-100 sm:bg-white sm:text-base text-base font-medium	 z-10  ${
           showNav ? "block duration-300" : "hidden "
         } sm:block`}
       >
@@ -137,7 +137,7 @@ function Navbar() {
             Request Quote
           </button>
         </div>
-        <div className="flex items-center space-x-8 px-5 sm:px-0 pb-5 sm:pb-0 justify-center">
+        <div className="flex items-center space-x-8 px-5 sm:px-0 pb-8 sm:pb-0 justify-center ">
           <div className="flex space-x-2 text-3xl sm:text-2xl">
             <a
               href="https://www.instagram.com/omtransltd/"
@@ -162,13 +162,13 @@ function Navbar() {
             </a>
           </div>
 
-          <div className="relative">
+          <div className="relative hidden sm:block">
             <button
               onClick={() => {
                 navigate("/lcl_sea_export");
                 window.scrollTo(0, 0);
               }}
-              className="hidden sm:block bg-red-600 text-white py-3 px-4 hover:bg-[#a50a0f] hover:text-white duration-200"
+              className="block bg-red-600 text-white py-3 px-4 hover:bg-[#a50a0f] hover:text-white duration-200"
             >
               Request Quote
             </button>

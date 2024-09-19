@@ -17,7 +17,7 @@ const slides = [
 
   {
     image: BgImg4,
-    text: ["90+ Countries Presence Worldwide"],
+    text: ["150+ Countries Presence Worldwide"],
   },
   {
     image: BgImg5,
@@ -47,7 +47,7 @@ export default function Slider() {
   return (
     <div className="relative w-full max-w-full mx-auto">
       {/* Slider Container */}
-      <div className="overflow-hidden relative h-[450px] ">
+      <div className="overflow-hidden relative sm:h-[450px] h-[200px] ">
         <AnimatePresence initial={false}>
           {slides.map((slide, index) =>
             currentSlide === index ? (
@@ -57,7 +57,7 @@ export default function Slider() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 1.1 }} // Fade duration
+                transition={{ duration: 1.5 }} // Fade duration
               >
                 <img
                   src={slide.image}
@@ -65,11 +65,11 @@ export default function Slider() {
                   className="w-full h-full object-cover"
                 />
                 <motion.div
-                  className="absolute inset-0 flex items-center text-center justify-center text-white text-5xl font-bold leading-snug"
+                  className="absolute inset-0 flex items-center text-center justify-center text-white sm:text-5xl text-2xl font-bold leading-snug"
                   initial={{ x: "-100%" }}
                   animate={{ x: 0 }}
                   exit={{ x: "100%" }}
-                  transition={{ duration: 0.7 }} // Slide duration
+                  transition={{ duration: 0.9 }} // Slide duration
                 >
                   {slide.text}
                 </motion.div>
