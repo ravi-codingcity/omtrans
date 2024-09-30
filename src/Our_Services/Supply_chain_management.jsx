@@ -21,6 +21,8 @@ import Extra_features from "../Components/Extra_features";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { LiaToolsSolid } from "react-icons/lia";
 import { BiSupport } from "react-icons/bi";
+import Scroll_Top from "../Components/Scroll_Top";
+
 
 function Supply_chain_management() {
   return (
@@ -220,7 +222,7 @@ function Supply_chain_management() {
           </div>
         </div>
       </div>
-
+      <Scroll_Top/>
       {/* Footer */}
       <Footer />
     </div>

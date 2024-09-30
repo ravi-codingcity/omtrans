@@ -21,6 +21,8 @@ import warehouse from "../assets/GS_warehouse.png";
 import staff from "../assets/GS_staff.png";
 import truck from "../assets/GS_truck.png";
 import Extra_features from "../Components/Extra_features";
+import Scroll_Top from "../Components/Scroll_Top";
+
 
 function Warehouse_distribution() {
   return (
@@ -246,7 +248,7 @@ function Warehouse_distribution() {
           </div>
         </div>
       </div>
-
+<Scroll_Top/>
       {/* Footer */}
       <Footer />
     </div>

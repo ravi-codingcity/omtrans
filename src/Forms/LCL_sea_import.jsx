@@ -184,7 +184,7 @@ function LCL_sea_import() {
     <div>
       <Navbar />
       <div className="flex flex-col items-center bg-slate-200">
-        <div className="max-w-screen-lg m-auto py-3">
+        <div className="max-w-screen-lg m-auto py-3 px-3">
           <h1 className="text-4xl py-3 font-bold">LCL - Sea Import</h1>
           <p className="py-1">
             Fill in our form below and our freight forward experts will contact
@@ -207,7 +207,7 @@ function LCL_sea_import() {
         {/*   <Form_animation />*/}
 
         <form ref={form} onSubmit={handleSubmit}>
-          <div className="max-w-screen-lg m-auto px-4 text-base">
+          <div className="max-w-screen-lg m-auto sm:px-4 px-2 text-base">
             {/* Form fields here */}
             <div className="pt-2 pb-6">
               <div className="flex items-center space-x-4 py-3">
@@ -231,7 +231,7 @@ function LCL_sea_import() {
                     value={Fix_shipment}
                     required
                     onChange={handleChangeshipment}
-                    className="bg-white  focus:ring-white focus:outline-none focus:ring-0 col-span-3  text-gray-900 text-sm rounded-lg  block  p-2.5"
+                    className="bg-white  focus:ring-white focus:outline-none focus:ring-0 col-span-3  text-gray-900 text-sm rounded-lg  block  p-2"
                   >
                     <option value="LCL Sea Export" selected>
                       LCL - Sea Import
@@ -241,7 +241,7 @@ function LCL_sea_import() {
 
                 {/* Port of Loading Field */}
 
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="port_of_loading"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -257,14 +257,14 @@ function LCL_sea_import() {
                     name="port_of_loading"
                     type="text"
                     id="port_of_loading"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
-                    placeholder="Enter Your Port of Loading"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
+                    placeholder="Your Port of Loading"
                     required
                     onChange={handleChange}
                   />
                 </div>
                 {/* Port of Destination Field */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="port_of_destination"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -281,8 +281,8 @@ function LCL_sea_import() {
                     name="port_of_destination"
                     type="text"
                     id="port_of_destination"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
-                    placeholder="Enter Your Port of Destination"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
+                    placeholder="Your Port of Destination"
                     required
                     onChange={handleChange}
                   />
@@ -299,9 +299,9 @@ function LCL_sea_import() {
                 <hr className="flex-grow h-[2px] bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 rounded-full border-0 animate-pulse" />
               </div>
 
-              <div className="grid grid-cols-2 grid-rows-1">
+              <div className="grid sm:grid-cols-2 grid-cols-1  grid-rows-1">
                 {/* Number of PKGsField */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="number_of_pkgs"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -313,14 +313,14 @@ function LCL_sea_import() {
                     name="number_of_pkgs"
                     type="text"
                     id="number_of_pkgs"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                     placeholder="Enter Your Number of PKG"
                     onChange={handleChange}
                   />
                 </div>
 
                 {/* PKG Dimension Field */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="pkg_dimension"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -332,16 +332,16 @@ function LCL_sea_import() {
                     name="pkg_dimension"
                     type="text"
                     id="pkg_dimension"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                     placeholder="Enter Your PKG Dimension"
                     onChange={handleChange}
                   />
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 grid-rows-1 items-center">
+              <div className="grid sm:grid-cols-2 grid-cols-1  grid-rows-1 items-center">
                 {/* Terms Section */}
-                <div className="my-2 grid grid-cols-4 items-center bg-white px-5 mx-1 border border-blue-600 py-2">
+                <div className="my-2 grid grid-cols-4 items-center bg-white px-4 mx-1 border border-blue-600 py-2">
                   <label
                     htmlFor="Terms"
                     className=" flex items-center font-medium text-gray-900 border-r-2 border-red-600"
@@ -386,7 +386,7 @@ function LCL_sea_import() {
                 </div>
 
                 {/* HS Code Section */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="hs_code"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -431,9 +431,9 @@ function LCL_sea_import() {
                 <hr className="flex-grow h-[2px] bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 rounded-full border-0 animate-pulse" />
               </div>
 
-              <div className="grid grid-cols-2 grid-rows-1">
+              <div className="grid sm:grid-cols-2 grid-cols-1  grid-rows-1">
                 {/* Pick Up Address Field */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="pick_up_address"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -445,14 +445,14 @@ function LCL_sea_import() {
                     name="pick_up_address"
                     type="text"
                     id="pick_up_address"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
-                    placeholder="Pick up Address (In Case of Ex-Work)"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
+                    placeholder="(In Case of Ex-Work)"
                     onChange={handleChange}
                   />
                 </div>
 
                 {/* Delivery Address Field */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="delivery_address"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -464,8 +464,8 @@ function LCL_sea_import() {
                     name="delivery_address"
                     type="text"
                     id="delivery_address"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
-                    placeholder="Enter Your Delivery Address"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
+                    placeholder="Your Delivery Address"
                     onChange={handleChange}
                   />
                 </div>
@@ -478,9 +478,9 @@ function LCL_sea_import() {
               <hr className="flex-grow h-[2px] bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 rounded-full border-0 animate-pulse" />
             </div>
 
-            <div className="grid grid-cols-2 grid-rows-1">
+            <div className="grid sm:grid-cols-2 grid-cols-1  grid-rows-1">
               {/* Pick Up Address Field */}
-              <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+              <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                 <label
                   htmlFor="Cargo Weight"
                   className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -492,14 +492,14 @@ function LCL_sea_import() {
                   name="cargo_weight"
                   type="text"
                   id="Cargo Weight"
-                  className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                  className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                   placeholder="Enter Your Cargo Weight"
                   onChange={handleChange}
                 />
               </div>
 
               {/* Items Field */}
-              <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+              <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                 <label
                   htmlFor="Items"
                   className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -511,14 +511,14 @@ function LCL_sea_import() {
                   name="Items"
                   type="text"
                   id="Items"
-                  className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                  className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                   placeholder="Enter Your Item"
                   onChange={handleChange}
                 />
               </div>
             </div>
 
-            <div className="grid grid-cols-2 grid-rows-1">
+            <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-1">
               {/* Checkbox for Haze Cargo */}
               <div className="my-2 flex items-center bg-white px-5 mx-1 py-2 border border-blue-600">
                 <input

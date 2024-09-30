@@ -41,6 +41,7 @@ import globe from "../assets/GS_globe.png";
 import warehouse from "../assets/GS_warehouse.png";
 import staff from "../assets/GS_staff.png";
 import truck from "../assets/GS_truck.png";
+import Scroll_Top from "../Components/Scroll_Top";
 
 function Home() {
   const navigate = useNavigate();
@@ -339,7 +340,7 @@ function Home() {
           </button>
         </div>
       </div>
-
+      <Scroll_Top />
       <Footer />
     </div>
   );

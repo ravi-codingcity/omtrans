@@ -34,11 +34,7 @@ const countries = [
   { value: "benin", label: "Benin", code: "+229" },
   { value: "bhutan", label: "Bhutan", code: "+975" },
   { value: "bolivia", label: "Bolivia", code: "+591" },
-  {
-    value: "bosnia_and_herzegovina",
-    label: "Bosnia and Herzegovina",
-    code: "+387",
-  },
+
   { value: "botswana", label: "Botswana", code: "+267" },
   { value: "brazil", label: "Brazil", code: "+55" },
   { value: "brunei", label: "Brunei", code: "+673" },
@@ -51,7 +47,7 @@ const countries = [
   { value: "cape_verde", label: "Cape Verde", code: "+238" },
   {
     value: "central_african_republic",
-    label: "Central African Republic",
+    label: "CAR",
     code: "+236",
   },
   { value: "chad", label: "Chad", code: "+235" },
@@ -61,7 +57,7 @@ const countries = [
   { value: "comoros", label: "Comoros", code: "+269" },
   {
     value: "congo_democratic_republic",
-    label: "Congo (Democratic Republic)",
+    label: "Congo (DR)",
     code: "+243",
   },
   { value: "congo_republic", label: "Congo (Republic)", code: "+242" },
@@ -77,7 +73,6 @@ const countries = [
   { value: "ecuador", label: "Ecuador", code: "+593" },
   { value: "egypt", label: "Egypt", code: "+20" },
   { value: "el_salvador", label: "El Salvador", code: "+503" },
-  { value: "equatorial_guinea", label: "Equatorial Guinea", code: "+240" },
   { value: "eritrea", label: "Eritrea", code: "+291" },
   { value: "estonia", label: "Estonia", code: "+372" },
   { value: "eswatini", label: "Eswatini", code: "+268" },
@@ -168,24 +163,10 @@ const countries = [
   { value: "romania", label: "Romania", code: "+40" },
   { value: "russia", label: "Russia", code: "+7" },
   { value: "rwanda", label: "Rwanda", code: "+250" },
-  {
-    value: "saint_kitts_and_nevis",
-    label: "Saint Kitts and Nevis",
-    code: "+1-869",
-  },
   { value: "saint_lucia", label: "Saint Lucia", code: "+1-758" },
-  {
-    value: "saint_vincent_and_the_grenadines",
-    label: "Saint Vincent and the Grenadines",
-    code: "+1-784",
-  },
   { value: "samoa", label: "Samoa", code: "+685" },
   { value: "san_marino", label: "San Marino", code: "+378" },
-  {
-    value: "sao_tome_and_principe",
-    label: "Sao Tome and Principe",
-    code: "+239",
-  },
+
   { value: "saudi_arabia", label: "Saudi Arabia", code: "+966" },
   { value: "senegal", label: "Senegal", code: "+221" },
   { value: "serbia", label: "Serbia", code: "+381" },
@@ -212,11 +193,7 @@ const countries = [
   { value: "thailand", label: "Thailand", code: "+66" },
   { value: "togo", label: "Togo", code: "+228" },
   { value: "tonga", label: "Tonga", code: "+676" },
-  {
-    value: "trinidad_and_tobago",
-    label: "Trinidad and Tobago",
-    code: "+1-868",
-  },
+
   { value: "tunisia", label: "Tunisia", code: "+216" },
   { value: "turkey", label: "Turkey", code: "+90" },
   { value: "turkmenistan", label: "Turkmenistan", code: "+993" },
@@ -225,7 +202,7 @@ const countries = [
   { value: "ukraine", label: "Ukraine", code: "+380" },
   {
     value: "united_arab_emirates",
-    label: "United Arab Emirates",
+    label: "UAE",
     code: "+971",
   },
   { value: "united_kingdom", label: "United Kingdom", code: "+44" },
@@ -680,7 +657,7 @@ function LCL_sea_import_step2() {
         {/*   <Form_animation />*/}
 
         <form ref={form} onSubmit={sendEmail}>
-          <div className="max-w-screen-lg m-auto px-4 text-base">
+          <div className="max-w-screen-lg m-auto sm:px-4 px-2 text-base">
             <div className="pt-2 pb-6">
               <div className="flex items-center space-x-4 py-3">
                 <h1 className="text-xl font-bold text-red-600">
@@ -692,7 +669,7 @@ function LCL_sea_import_step2() {
 
               <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-1">
                 {/* Port of Loading Field */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="company_name"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -704,15 +681,15 @@ function LCL_sea_import_step2() {
                     name="user_name"
                     type="text"
                     id="company_name"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
-                    placeholder="Enter Your Company Name"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
+                    placeholder="Enter Company Name"
                     value={form2Data.user_name}
                     required
                     onChange={handleChange}
                   />
                 </div>
                 {/* Port of Destination Field */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="company_address"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -725,8 +702,8 @@ function LCL_sea_import_step2() {
                     rows={2}
                     type="text"
                     id="company_address"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
-                    placeholder="Enter Your Company Address"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
+                    placeholder="Enter Company Address"
                     value={form2Data.company_address}
                     onChange={handleChange}
                     required
@@ -747,7 +724,7 @@ function LCL_sea_import_step2() {
               <>
                 <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-1 items-center">
                   {/* Country Dropdown */}
-                  <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                  <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                     <label
                       htmlFor="country"
                       className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -760,11 +737,11 @@ function LCL_sea_import_step2() {
                       id="country"
                       value={form2Data.user_country}
                       onChange={handleCountryChange}
-                      className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                      className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                       required
                     >
                       <option value="" disabled>
-                        Enter your country name
+                        Select country name
                       </option>
                       {countries.map((country) => (
                         <option key={country.value} value={country.value}>
@@ -775,7 +752,7 @@ function LCL_sea_import_step2() {
                   </div>
 
                   {/* State Dropdown */}
-                  <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                  <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                     <label
                       htmlFor="state"
                       className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -788,7 +765,7 @@ function LCL_sea_import_step2() {
                       id="state"
                       value={form2Data.user_state}
                       onChange={handleStateChange}
-                      className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                      className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                       required
                       disabled={!form2Data.user_country}
                     >
@@ -808,7 +785,7 @@ function LCL_sea_import_step2() {
 
                 {/* Phone Number Input */}
                 <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-1 items-center">
-                  <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                  <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                     <label
                       htmlFor="number"
                       className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -817,7 +794,7 @@ function LCL_sea_import_step2() {
                       <IoCall className="ml-2 text-2xl text-red-600" />
                     </label>
                     <div className="col-span-3 flex items-center">
-                      <span className="bg-gray-200 px-3 py-2 rounded-l-lg text-gray-900 text-sm ml-2">
+                      <span className="bg-gray-200 sm:px-3 px-2 py-2 rounded-l-lg text-gray-900 text-sm sm:ml-2 ml-1">
                         {phoneCode}
                       </span>
                       <input
@@ -826,8 +803,8 @@ function LCL_sea_import_step2() {
                         id="number"
                         value={form2Data.user_number}
                         onChange={handlePhoneNumberChange}
-                        className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
-                        placeholder="Enter your phone number"
+                        className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
+                        placeholder="Enter phone number"
                         required
                       />
                     </div>
@@ -835,7 +812,7 @@ function LCL_sea_import_step2() {
 
                   {/* Additional form fields for company email and address */}
 
-                  <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                  <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                     <label
                       htmlFor="email"
                       className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -849,8 +826,8 @@ function LCL_sea_import_step2() {
                       id="email"
                       value={form2Data.company_email}
                       onChange={handleChange}
-                      className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
-                      placeholder="Enter your company email"
+                      className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
+                      placeholder="Enter company email"
                       required
                     />
                   </div>
@@ -894,7 +871,7 @@ function LCL_sea_import_step2() {
           </div>
         </form>
       </div>
-     
+
       <Footer />
     </div>
   );

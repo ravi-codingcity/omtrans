@@ -186,7 +186,7 @@ function Air_import() {
     <div>
       <Navbar />
       <div className="flex flex-col items-center bg-slate-200">
-        <div className="max-w-screen-lg m-auto py-3">
+        <div className="max-w-screen-lg m-auto py-3 px-3">
           <h1 className="text-4xl py-3 font-bold">Air Import</h1>
           <p className="py-1">
             Fill in our form below and our freight forward experts will contact
@@ -209,7 +209,7 @@ function Air_import() {
         {/*   <Form_animation />*/}
 
         <form ref={form} onSubmit={handleSubmit}>
-          <div className="max-w-screen-lg m-auto px-4 text-base">
+          <div className="max-w-screen-lg m-auto sm:px-4 px-2 text-base">
             {/* Form fields here */}
             <div className="pt-2 pb-6">
               <div className="flex items-center space-x-4 py-3">
@@ -218,7 +218,7 @@ function Air_import() {
                 <hr className="flex-grow h-[2px] bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 rounded-full border-0 animate-pulse" />
               </div>
 
-              <div className="grid grid-cols-2 grid-rows-1">
+              <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-1">
                 <div className="my-3 hidden grid-cols-4 grid-rows-1 items-center bg-white py-1 px-5">
                   <label
                     for="shipment"
@@ -243,7 +243,7 @@ function Air_import() {
 
                 {/* Port of Loading Field */}
 
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="airport_of_departure"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -259,14 +259,14 @@ function Air_import() {
                     name="airport_of_departure"
                     type="text"
                     id="airport_of_departure"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
-                    placeholder="Enter Your Airport of Departure"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
+                    placeholder="Enter Departure Airport"
                     required
                     onChange={handleChange}
                   />
                 </div>
                 {/* Port of Destination Field */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="airport_of_destination"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -282,8 +282,8 @@ function Air_import() {
                     name="airport_of_destination"
                     type="text"
                     id="airport_of_destination"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
-                    placeholder="Enter Your Airport of Destination"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
+                    placeholder="Enter Destination Airport"
                     required
                     onChange={handleChange}
                   />
@@ -300,9 +300,9 @@ function Air_import() {
                 <hr className="flex-grow h-[2px] bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 rounded-full border-0 animate-pulse" />
               </div>
 
-              <div className="grid grid-cols-2 grid-rows-1">
+              <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-1">
                 {/* Number of PKGsField */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="number_of_pkgs"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -314,14 +314,14 @@ function Air_import() {
                     name="number_of_pkgs"
                     type="text"
                     id="number_of_pkgs"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
-                    placeholder="Enter Your Number of PKG"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
+                    placeholder="Enter Number of PKG"
                     onChange={handleChange}
                   />
                 </div>
 
                 {/* PKG Dimension Field */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="pkg_dimension"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -333,16 +333,16 @@ function Air_import() {
                     name="pkg_dimension"
                     type="text"
                     id="pkg_dimension"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                     placeholder="Enter Your PKG Dimension"
                     onChange={handleChange}
                   />
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 grid-rows-1 items-center">
+              <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-1 items-center">
                 {/* Terms Section */}
-                <div className="my-2 grid grid-cols-4 items-center bg-white px-5 mx-1 border border-blue-600 py-2">
+                <div className="my-2 grid grid-cols-4 items-center bg-white sm:px-4 px-2 mx-1 border border-blue-600 py-2">
                   <label
                     htmlFor="Terms"
                     className=" flex items-center font-medium text-gray-900 border-r-2 border-red-600"
@@ -403,7 +403,7 @@ function Air_import() {
                 </div>
 
                 {/* HS Code Section */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="hs_code"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -413,7 +413,7 @@ function Air_import() {
                   <select
                     name="hs_code"
                     id="hs_code"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                     value={hsCode}
                     onChange={handleSelectChange}
                   >
@@ -432,7 +432,7 @@ function Air_import() {
                       placeholder="Enter Custom HS Code"
                       value={customHSCode}
                       onChange={handleInputChange}
-                      className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 ml-3"
+                      className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 ml-2"
                     />
                   )}
                 </div>
@@ -448,9 +448,9 @@ function Air_import() {
                 <hr className="flex-grow h-[2px] bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 rounded-full border-0 animate-pulse" />
               </div>
 
-              <div className="grid grid-cols-2 grid-rows-1">
+              <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-1">
                 {/* Pick Up Address Field */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="pick_up_address"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -462,14 +462,14 @@ function Air_import() {
                     name="pick_up_address"
                     type="text"
                     id="pick_up_address"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                     placeholder="Enter Your Pick up Address"
                     onChange={handleChange}
                   />
                 </div>
 
                 {/* Delivery Address Field */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="delivery_address"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -481,8 +481,8 @@ function Air_import() {
                     name="delivery_address"
                     type="text"
                     id="delivery_address"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
-                    placeholder="In case of term DDP or DAP"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
+                    placeholder="In case of DDP or DAP"
                     onChange={handleChange}
                   />
                 </div>
@@ -495,9 +495,9 @@ function Air_import() {
               <hr className="flex-grow h-[2px] bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 rounded-full border-0 animate-pulse" />
             </div>
 
-            <div className="grid grid-cols-2 grid-rows-1">
+            <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-1">
               {/* Pick Up Address Field */}
-              <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+              <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                 <label
                   htmlFor="Cargo Weight"
                   className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -509,14 +509,14 @@ function Air_import() {
                   name="cargo_weight"
                   type="text"
                   id="Cargo Weight"
-                  className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                  className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                   placeholder="Enter Your Cargo Weight"
                   onChange={handleChange}
                 />
               </div>
 
               {/* Delivery Address Field */}
-              <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+              <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                 <label
                   htmlFor="cargo_value"
                   className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -528,16 +528,16 @@ function Air_import() {
                   name="cargo_value"
                   type="text"
                   id="cargo_value"
-                  className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                  className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                   placeholder="Enter Your Cargo Value"
                   onChange={handleChange}
                 />
               </div>
             </div>
 
-            <div className="grid grid-cols-2 grid-rows-1">
+            <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-1">
               {/* Checkbox for Haze Cargo */}
-              <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+              <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                 <input
                   type="checkbox"
                   id="haze_cargo"
@@ -555,7 +555,7 @@ function Air_import() {
               </div>
 
               {/* Items Field */}
-              <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+              <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                 <label
                   htmlFor="Items"
                   className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -567,7 +567,7 @@ function Air_import() {
                   name="Items"
                   type="text"
                   id="Items"
-                  className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                  className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                   placeholder="Enter Your Item"
                   onChange={handleChange}
                 />

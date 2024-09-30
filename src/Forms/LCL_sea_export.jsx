@@ -208,11 +208,11 @@ function LCL_sea_export() {
         {/*   <Form_animation />*/}
 
         <form ref={form} onSubmit={handleSubmit}>
-          <div className="max-w-screen-lg m-auto px-4 text-base">
+          <div className="max-w-screen-lg m-auto sm:px-4 px-2 text-base">
             {/* Form fields here */}
             <div className="pt-2 pb-6">
               <div className="flex items-center space-x-4 py-3">
-                <h1 className="text-xl font-bold text-red-600">Routes </h1>{" "}
+                <h1 className="text-xl font-bold text-red-600">Routes </h1>
                 <FaTruckFast className="ml-1 text-4xl text-red-600" />
                 <hr className="flex-grow h-[2px] bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 rounded-full border-0 animate-pulse" />
               </div>
@@ -242,13 +242,12 @@ function LCL_sea_export() {
 
                 {/* Port of Loading Field */}
 
-                <div className="my-2 flex  items-center bg-white sm:px-4 px-3 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex  items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="port_of_loading"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
                   >
                     {/* Show red star if field is empty */}
-                    
                     {!form1Data.port_of_loading && (
                       <span className="text-red-600 text-2xl mr-1">*</span>
                     )}
@@ -267,7 +266,7 @@ function LCL_sea_export() {
                 </div>
                 {/* Port of Destination Field */}
 
-                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-1 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="port_of_destination"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -304,7 +303,7 @@ function LCL_sea_export() {
 
               <div className="grid sm:grid-cols-2 grid-cols-1  grid-rows-1">
                 {/* Number of PKGsField */}
-                <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="number_of_pkgs"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -323,7 +322,7 @@ function LCL_sea_export() {
                 </div>
 
                 {/* PKG Dimension Field */}
-                <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="pkg_dimension"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -453,7 +452,7 @@ function LCL_sea_export() {
 
               <div className="grid sm:grid-cols-2 grid-cols-1  grid-rows-1">
                 {/* Pick Up Address Field */}
-                <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="pick_up_address"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -472,7 +471,7 @@ function LCL_sea_export() {
                 </div>
 
                 {/* Delivery Address Field */}
-                <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="delivery_address"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -500,7 +499,7 @@ function LCL_sea_export() {
 
             <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-1">
               {/* Pick Up Address Field */}
-              <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
+              <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                 <label
                   htmlFor="Cargo Weight"
                   className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -519,7 +518,7 @@ function LCL_sea_export() {
               </div>
 
               {/* Delivery Address Field */}
-              <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
+              <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                 <label
                   htmlFor="cargo_value"
                   className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"

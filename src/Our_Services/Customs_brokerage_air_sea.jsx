@@ -21,6 +21,7 @@ import warehouse from "../assets/GS_warehouse.png";
 import staff from "../assets/GS_staff.png";
 import truck from "../assets/GS_truck.png";
 import Extra_features from "../Components/Extra_features";
+import Scroll_Top from "../Components/Scroll_Top";
 
 function Customs_brokerage_air_sea() {
   return (
@@ -112,7 +113,6 @@ function Customs_brokerage_air_sea() {
       {/* Our Strength */}
 
       <div className="bg-white py-10 ">
-        
         <p className="text-4xl font-bold my-6 text-center">Group Strength</p>
         <div className="flex justify-center flex-wrap  items-stretch py-3 text-white">
           <Global_Strength
@@ -223,6 +223,7 @@ function Customs_brokerage_air_sea() {
       </div>
 
       {/* Footer */}
+      <Scroll_Top />
       <Footer />
     </div>
   );

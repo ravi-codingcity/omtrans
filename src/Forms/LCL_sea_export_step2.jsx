@@ -661,7 +661,7 @@ function LCL_sea_export_step2() {
         {/*   <Form_animation />*/}
 
         <form ref={form} onSubmit={sendEmail}>
-          <div className="max-w-screen-lg m-auto px-4 text-base">
+          <div className="max-w-screen-lg m-auto sm:px-4 px-2 text-base">
             <div className="pt-2 pb-6">
               <div className="flex items-center space-x-4 py-3">
                 <h1 className="text-xl font-bold text-red-600">
@@ -673,7 +673,7 @@ function LCL_sea_export_step2() {
 
               <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-1">
                 {/* Port of Company name */}
-                <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="company_name"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -693,10 +693,10 @@ function LCL_sea_export_step2() {
                   />
                 </div>
                 {/* Port of Destination Field */}
-                <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="company_address"
-                    className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
+                    className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 sm:pr-3 pr-1"
                   >
                     Company Address
                     <IoLocationOutline className="ml-1 text-2xl text-red-600" />
@@ -741,11 +741,11 @@ function LCL_sea_export_step2() {
                       id="country"
                       value={form2Data.user_country}
                       onChange={handleCountryChange}
-                      className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow py-3"
+                      className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow py-3"
                       required
                     >
                       <option value="" disabled>
-                        Select country
+                        Select your country
                       </option>
                       {countries.map((country) => (
                         <option key={country.value} value={country.value}>
@@ -789,7 +789,7 @@ function LCL_sea_export_step2() {
 
                 {/* Phone Number Input */}
                 <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-1 items-center">
-                  <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
+                  <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                     <label
                       htmlFor="number"
                       className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -798,7 +798,7 @@ function LCL_sea_export_step2() {
                       <IoCall className="ml-2 text-2xl text-red-600" />
                     </label>
                     <div className="col-span-3 flex items-center">
-                      <span className="bg-gray-200 px-3 py-2 rounded-l-lg text-gray-900 text-sm ml-2">
+                      <span className="bg-gray-200 sm:px-3 px-2 py-2 rounded-l-lg text-gray-900 text-sm sm:ml-2 ml-1">
                         {phoneCode}
                       </span>
                       <input
@@ -816,7 +816,7 @@ function LCL_sea_export_step2() {
 
                   {/* Additional form fields for company email and address */}
 
-                  <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
+                  <div className="my-2 flex items-center bg-white sm:px-4 px-2 mx-1 py-1 border border-blue-600">
                     <label
                       htmlFor="email"
                       className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
