@@ -672,8 +672,8 @@ function LCL_sea_export_step2() {
               </div>
 
               <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-1">
-                {/* Port of Loading Field */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                {/* Port of Company name */}
+                <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="company_name"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -685,7 +685,7 @@ function LCL_sea_export_step2() {
                     name="user_name"
                     type="text"
                     id="company_name"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                     placeholder="Your Company Name"
                     value={form2Data.user_name}
                     required
@@ -693,7 +693,7 @@ function LCL_sea_export_step2() {
                   />
                 </div>
                 {/* Port of Destination Field */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="company_address"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -706,7 +706,7 @@ function LCL_sea_export_step2() {
                     rows={2}
                     type="text"
                     id="company_address"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                     placeholder="Your Company Address"
                     value={form2Data.company_address}
                     onChange={handleChange}
@@ -789,7 +789,7 @@ function LCL_sea_export_step2() {
 
                 {/* Phone Number Input */}
                 <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-1 items-center">
-                  <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                  <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
                     <label
                       htmlFor="number"
                       className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -807,7 +807,7 @@ function LCL_sea_export_step2() {
                         id="number"
                         value={form2Data.user_number}
                         onChange={handlePhoneNumberChange}
-                        className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                        className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                         placeholder="Your phone number"
                         required
                       />
@@ -816,7 +816,7 @@ function LCL_sea_export_step2() {
 
                   {/* Additional form fields for company email and address */}
 
-                  <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                  <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
                     <label
                       htmlFor="email"
                       className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -830,7 +830,7 @@ function LCL_sea_export_step2() {
                       id="email"
                       value={form2Data.company_email}
                       onChange={handleChange}
-                      className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                      className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-3"
                       placeholder="Your company email"
                       required
                     />

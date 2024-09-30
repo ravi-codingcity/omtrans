@@ -304,7 +304,7 @@ function LCL_sea_export() {
 
               <div className="grid sm:grid-cols-2 grid-cols-1  grid-rows-1">
                 {/* Number of PKGsField */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="number_of_pkgs"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -316,14 +316,14 @@ function LCL_sea_export() {
                     name="number_of_pkgs"
                     type="text"
                     id="number_of_pkgs"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                     placeholder="Your Number of PKG"
                     onChange={handleChange}
                   />
                 </div>
 
                 {/* PKG Dimension Field */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="pkg_dimension"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -335,7 +335,7 @@ function LCL_sea_export() {
                     name="pkg_dimension"
                     type="text"
                     id="pkg_dimension"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                     placeholder="Your PKG Dimension"
                     onChange={handleChange}
                   />
@@ -453,7 +453,7 @@ function LCL_sea_export() {
 
               <div className="grid sm:grid-cols-2 grid-cols-1  grid-rows-1">
                 {/* Pick Up Address Field */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="pick_up_address"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -465,14 +465,14 @@ function LCL_sea_export() {
                     name="pick_up_address"
                     type="text"
                     id="pick_up_address"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                     placeholder="Your Pick up Address"
                     onChange={handleChange}
                   />
                 </div>
 
                 {/* Delivery Address Field */}
-                <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+                <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
                   <label
                     htmlFor="delivery_address"
                     className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -484,7 +484,7 @@ function LCL_sea_export() {
                     name="delivery_address"
                     type="text"
                     id="delivery_address"
-                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                    className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                     placeholder="Your Delivery Address"
                     onChange={handleChange}
                   />
@@ -500,7 +500,7 @@ function LCL_sea_export() {
 
             <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-1">
               {/* Pick Up Address Field */}
-              <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+              <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
                 <label
                   htmlFor="Cargo Weight"
                   className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -512,14 +512,14 @@ function LCL_sea_export() {
                   name="cargo_weight"
                   type="text"
                   id="Cargo Weight"
-                  className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                  className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                   placeholder="Your Cargo Weight"
                   onChange={handleChange}
                 />
               </div>
 
               {/* Delivery Address Field */}
-              <div className="my-2 flex items-center bg-white px-5 mx-1 py-1 border border-blue-600">
+              <div className="my-2 flex items-center bg-white px-4 mx-1 py-1 border border-blue-600">
                 <label
                   htmlFor="cargo_value"
                   className="flex items-center font-medium text-gray-900 border-r-2 border-red-600 pr-3"
@@ -531,7 +531,7 @@ function LCL_sea_export() {
                   name="cargo_value"
                   type="text"
                   id="cargo_value"
-                  className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
+                  className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
                   placeholder="Your Cargo Value"
                   onChange={handleChange}
                 />

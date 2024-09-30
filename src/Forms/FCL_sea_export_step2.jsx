@@ -530,8 +530,34 @@ function FCL_sea_import_step2() {
     user_country: "",
     user_state: "",
     user_number: "",
+    reference_number: "",
     // Add more form fields as needed
   });
+
+  // Helper function to fetch reference number from backend
+  const fetchReferenceNumber = async () => {
+    try {
+      const response = await fetch(
+        "https://new-backend-yulp.onrender.com/api/reference",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`Server Error: ${response.status}`);
+      }
+
+      const data = await response.json();
+      return data.reference_number;
+    } catch (error) {
+      console.error("Error fetching reference number:", error);
+      return null;
+    }
+  };
 
   const handleChange = (e) => {
     setForm2Data({
@@ -540,17 +566,33 @@ function FCL_sea_import_step2() {
     });
   };
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
     setPending(true);
 
     // Retrieve data from local storage
     const form1Data = JSON.parse(localStorage.getItem("form1Data"));
 
+    // Fetch the unique reference number from the server
+    const newReferenceNumber = await fetchReferenceNumber();
+
+    if (!newReferenceNumber) {
+      setPending(false);
+      console.error("Failed to fetch reference number.");
+      return;
+    }
+
+    // Update form2Data with the fetched reference number
+    const updatedForm2Data = {
+      ...form2Data,
+      reference_number: newReferenceNumber,
+    };
+
     // Combine data from form1 and form2
     const combinedData = {
       ...form1Data,
       ...form2Data,
+      reference_number: newReferenceNumber,
     };
 
     // Send combined data via EmailJS
@@ -564,6 +606,10 @@ function FCL_sea_import_step2() {
           console.log("SUCCESS!");
           form.current.reset();
           localStorage.removeItem("form1Data"); // Clear local storage
+
+          // Store reference number for Thank You page
+          localStorage.setItem("referenceNumber", newReferenceNumber);
+
           navigate("/fcl_sea_import/thank_you");
           window.scrollTo(0, 0);
         },
@@ -820,27 +866,29 @@ function FCL_sea_import_step2() {
                 disabled={pending}
               >
                 {pending ? (
-              <svg
-                className="animate-spin h-5 w-10 text-white inline-block"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <circle
-                  className="opacity-25"
-                  cx="12"
-                  cy="12"
-                  r="10"
-                  stroke="currentColor"
-                  strokeWidth="4"
-                ></circle>
-                <path
-                  className="opacity-75"
-                  fill="currentColor"
-                  d="M4 12a8 8 0 018-8v2a6 6 0 00-6 6H4z"
-                ></path>
-              </svg>
-            )  : "Send Request"}
+                  <svg
+                    className="animate-spin h-5 w-10 text-white inline-block"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    ></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8v2a6 6 0 00-6 6H4z"
+                    ></path>
+                  </svg>
+                ) : (
+                  "Send Request"
+                )}
               </button>
             </div>
           </div>

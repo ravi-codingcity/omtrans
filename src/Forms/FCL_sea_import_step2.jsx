@@ -592,6 +592,7 @@ function LCL_sea_export_step2() {
     const combinedData = {
       ...form1Data,
       ...form2Data,
+      reference_number: newReferenceNumber,
     };
 
     // Send combined data via EmailJS

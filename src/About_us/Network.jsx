@@ -184,7 +184,7 @@ const Network = () => {
             {/* Vietnam */}
 
             {hoveredBox === 1 && (
-              <div className="absolute sm:w-[230px] sm:h-[120px] w-[190px] h-[130px] sm:p-2.5 p-2 bg-blue-500 rounded-lg sm:right-[14%]  right-[3%] bottom-[50%] sm:bottom-[44%]">
+              <div className="absolute sm:w-[230px] sm:h-[135px] w-[190px] h-[130px] sm:p-2.5 p-2 bg-blue-500 rounded-lg sm:right-[14%]  right-[3%] bottom-[50%] sm:bottom-[46%]">
                 <p className="text-white sm:text-sm text-xs font-semibold flex items-center ">
                   <img
                     className="w-4 mr-2"
@@ -210,6 +210,24 @@ const Network = () => {
                     />
                   </svg>
                   lerasal@seairlinks.vn
+                </p>
+                <p className="text-white sm:text-sm text-xs flex items-center ">
+                  <svg
+                    className="w-5 mr-1 text-red-600"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m18.4 14.8-1.2-1.3a1.7 1.7 0 0 0-2.4 0l-.7.7a1.7 1.7 0 0 1-2.4 0l-1.9-1.9a1.7 1.7 0 0 1 0-2.4l.7-.6a1.7 1.7 0 0 0 0-2.5L9.2 5.6a1.6 1.6 0 0 0-2.4 0c-3.2 3.2-1.7 6.9 1.5 10 3.2 3.3 7 4.8 10.1 1.6a1.6 1.6 0 0 0 0-2.4Z"
+                    />
+                  </svg>
+                  +91-44-22336768
                 </p>
                 <p className="text-white sm:text-sm text-xs flex items-start ">
                   <svg
@@ -243,7 +261,7 @@ const Network = () => {
             {/* South Korea */}
 
             {hoveredBox === 2 && (
-              <div className="absolute sm:w-[230px] sm:h-[80px] w-[190px] h-[130px] sm:p-2.5 p-2 bg-blue-500 rounded-lg right-[1%] bottom-[65%] sm:right-[7%] sm:bottom-[61%]">
+              <div className="absolute sm:w-[230px] sm:h-[135px] w-[190px] h-[130px] sm:p-2.5 p-2 bg-blue-500 rounded-lg right-[1%] bottom-[65%] sm:right-[7%] sm:bottom-[61%]">
                 <p className="text-white sm:text-sm text-xs font-semibold flex items-center ">
                   <img
                     className="w-4 mr-2"
@@ -251,6 +269,42 @@ const Network = () => {
                     alt="Singapore Flag"
                   />
                   South Korea
+                </p>
+
+                <p className="text-white sm:text-sm text-xs flex items-center ">
+                  <svg
+                    className="w-5 mr-1 text-red-600"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      d="m3.5 5.5 7.9 6c.4.3.8.3 1.2 0l7.9-6M4 19h16c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H4a1 1 0 0 0-1 1v12c0 .6.4 1 1 1Z"
+                    />
+                  </svg>
+                  oku@kaisoten.co.jp
+                </p>
+                <p className="text-white sm:text-sm text-xs flex items-center ">
+                  <svg
+                    className="w-5 mr-1 text-red-600"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m18.4 14.8-1.2-1.3a1.7 1.7 0 0 0-2.4 0l-.7.7a1.7 1.7 0 0 1-2.4 0l-1.9-1.9a1.7 1.7 0 0 1 0-2.4l.7-.6a1.7 1.7 0 0 0 0-2.5L9.2 5.6a1.6 1.6 0 0 0-2.4 0c-3.2 3.2-1.7 6.9 1.5 10 3.2 3.3 7 4.8 10.1 1.6a1.6 1.6 0 0 0 0-2.4Z"
+                    />
+                  </svg>
+                  +82-2-771-3691
                 </p>
 
                 <p className="text-white sm:text-sm text-xs flex items-start ">
@@ -276,7 +330,7 @@ const Network = () => {
                       d="M17.8 14h0a7 7 0 1 0-11.5 0h0l.1.3.3.3L12 21l5.1-6.2.6-.7.1-.2Z"
                     />
                   </svg>
-                  GOTO SOUTH EAST ASIA PTE LTD. Head Office：Singapore
+                  GOTO KOREA CO., LTD. Head Office：Seoul Branch：Busan・Daegu
                 </p>
               </div>
             )}
@@ -343,7 +397,7 @@ const Network = () => {
             {/* Hong Kong */}
 
             {hoveredBox === 4 && (
-              <div className="absolute w-[220px] h-[95px] p-2.5 bg-blue-500 rounded-lg right-[11%] bottom-[52%]">
+              <div className="absolute w-[220px] h-[135px] p-2.5 bg-blue-500 rounded-lg right-[11%] bottom-[52%]">
                 <p className="text-white text-sm font-semibold flex items-center ">
                   <img
                     className="w-4 mr-2"
@@ -352,6 +406,43 @@ const Network = () => {
                   />
                   Hong Kong
                 </p>
+
+                <p className="text-white sm:text-sm text-xs flex items-center ">
+                  <svg
+                    className="w-5 mr-1 text-red-600"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      d="m3.5 5.5 7.9 6c.4.3.8.3 1.2 0l7.9-6M4 19h16c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H4a1 1 0 0 0-1 1v12c0 .6.4 1 1 1Z"
+                    />
+                  </svg>
+                  aigan_lau@hkgoto.com.hk
+                </p>
+                <p className="text-white sm:text-sm text-xs flex items-center ">
+                  <svg
+                    className="w-5 mr-1 text-red-600"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m18.4 14.8-1.2-1.3a1.7 1.7 0 0 0-2.4 0l-.7.7a1.7 1.7 0 0 1-2.4 0l-1.9-1.9a1.7 1.7 0 0 1 0-2.4l.7-.6a1.7 1.7 0 0 0 0-2.5L9.2 5.6a1.6 1.6 0 0 0-2.4 0c-3.2 3.2-1.7 6.9 1.5 10 3.2 3.3 7 4.8 10.1 1.6a1.6 1.6 0 0 0 0-2.4Z"
+                    />
+                  </svg>
+                  +852-2615-281
+                </p>
+
                 <p className="text-white text-sm flex items-start">
                   <svg
                     className="w-10 mr-2 text-red-600"
@@ -383,7 +474,7 @@ const Network = () => {
             {/* Taiwan */}
 
             {hoveredBox === 5 && (
-              <div className="absolute w-[220px] h-[80px] p-2.5 bg-blue-500 rounded-lg right-[9%] bottom-[52%]">
+              <div className="absolute w-[270px] h-[120px] p-2.5 bg-blue-500 rounded-lg right-[9%] bottom-[52%]">
                 <p className="text-white text-sm font-semibold flex items-center ">
                   <img
                     className="w-4 mr-2"
@@ -391,6 +482,42 @@ const Network = () => {
                     alt="Taiwan Flag"
                   />
                   Taiwan
+                </p>
+
+                <p className="text-white sm:text-sm text-xs flex items-center ">
+                  <svg
+                    className="w-5 mr-1 text-red-600"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      d="m3.5 5.5 7.9 6c.4.3.8.3 1.2 0l7.9-6M4 19h16c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H4a1 1 0 0 0-1 1v12c0 .6.4 1 1 1Z"
+                    />
+                  </svg>
+                  michael0416@gotofairwind.com.tw
+                </p>
+                <p className="text-white sm:text-sm text-xs flex items-center ">
+                  <svg
+                    className="w-5 mr-1 text-red-600"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m18.4 14.8-1.2-1.3a1.7 1.7 0 0 0-2.4 0l-.7.7a1.7 1.7 0 0 1-2.4 0l-1.9-1.9a1.7 1.7 0 0 1 0-2.4l.7-.6a1.7 1.7 0 0 0 0-2.5L9.2 5.6a1.6 1.6 0 0 0-2.4 0c-3.2 3.2-1.7 6.9 1.5 10 3.2 3.3 7 4.8 10.1 1.6a1.6 1.6 0 0 0 0-2.4Z"
+                    />
+                  </svg>
+                  +886-2-2562-3297
                 </p>
 
                 <p className="text-white text-sm flex items-start ">
@@ -483,7 +610,7 @@ const Network = () => {
             {/* UK */}
 
             {hoveredBox === 7 && (
-              <div className="absolute sm:w-[220px] sm:h-[80px] w-[190px] h-[130px] sm:p-2.5 p-2 bg-blue-500 rounded-lg top-[-38%] right-[32%] sm:top-[15%] sm:right-[40%] ">
+              <div className="absolute sm:w-[270px] sm:h-[120px] w-[190px] h-[130px] sm:p-2.5 p-2 bg-blue-500 rounded-lg top-[-38%] right-[32%] sm:top-[9%] sm:right-[40%] ">
                 <p className="text-white text-sm font-semibold flex items-center ">
                   <img
                     className="w-4 mr-2"
@@ -493,9 +620,45 @@ const Network = () => {
                   Netherland
                 </p>
 
+                <p className="text-white sm:text-sm text-xs flex items-center ">
+                  <svg
+                    className="w-4 mr-1 text-red-600"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      d="m3.5 5.5 7.9 6c.4.3.8.3 1.2 0l7.9-6M4 19h16c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H4a1 1 0 0 0-1 1v12c0 .6.4 1 1 1Z"
+                    />
+                  </svg>
+                  kentaro.katayama@gotokaisoten.com
+                </p>
+                <p className="text-white sm:text-sm text-xs flex items-center ">
+                  <svg
+                    className="w-5 mr-1 text-red-600"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m18.4 14.8-1.2-1.3a1.7 1.7 0 0 0-2.4 0l-.7.7a1.7 1.7 0 0 1-2.4 0l-1.9-1.9a1.7 1.7 0 0 1 0-2.4l.7-.6a1.7 1.7 0 0 0 0-2.5L9.2 5.6a1.6 1.6 0 0 0-2.4 0c-3.2 3.2-1.7 6.9 1.5 10 3.2 3.3 7 4.8 10.1 1.6a1.6 1.6 0 0 0 0-2.4Z"
+                    />
+                  </svg>
+                  +31-20-299-8793
+                </p>
+
                 <p className="text-white sm:text-sm text-xs flex items-start ">
                   <svg
-                    className="w-8 text-red-600 mr-1"
+                    className="w-4 text-red-600 mr-1"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -1055,7 +1218,7 @@ const Network = () => {
             {/* Singapore */}
 
             {hoveredBox === 15 && (
-              <div className="absolute sm:w-[230px] sm:h-[100px] w-[190px] h-[130px] sm:p-2.5 p-2 bg-blue-500 rounded-lg sm:right-[14%]  right-[3%] bottom-[50%] sm:bottom-[44%]">
+              <div className="absolute sm:w-[230px] sm:h-[140px] w-[190px] h-[130px] sm:p-2.5 p-2 bg-blue-500 rounded-lg sm:right-[14%]  right-[3%] bottom-[50%] sm:bottom-[42%]">
                 <p className="text-white sm:text-sm text-xs font-semibold flex items-center ">
                   <img
                     className="w-4 mr-2"
@@ -1063,6 +1226,42 @@ const Network = () => {
                     alt="Vietnam Flag"
                   />
                   Singapore
+                </p>
+
+                <p className="text-white sm:text-sm text-xs flex items-center ">
+                  <svg
+                    className="w-5 mr-1 text-red-600"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      d="m3.5 5.5 7.9 6c.4.3.8.3 1.2 0l7.9-6M4 19h16c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H4a1 1 0 0 0-1 1v12c0 .6.4 1 1 1Z"
+                    />
+                  </svg>
+                  takashi@gotokaisoten.com
+                </p>
+                <p className="text-white sm:text-sm text-xs flex items-center ">
+                  <svg
+                    className="w-5 mr-1 text-red-600"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m18.4 14.8-1.2-1.3a1.7 1.7 0 0 0-2.4 0l-.7.7a1.7 1.7 0 0 1-2.4 0l-1.9-1.9a1.7 1.7 0 0 1 0-2.4l.7-.6a1.7 1.7 0 0 0 0-2.5L9.2 5.6a1.6 1.6 0 0 0-2.4 0c-3.2 3.2-1.7 6.9 1.5 10 3.2 3.3 7 4.8 10.1 1.6a1.6 1.6 0 0 0 0-2.4Z"
+                    />
+                  </svg>
+                  +65-6272-9929
                 </p>
 
                 <p className="text-white sm:text-sm text-xs flex items-start ">
@@ -1096,7 +1295,7 @@ const Network = () => {
             {/* Philippines */}
 
             {hoveredBox === 16 && (
-              <div className="absolute w-[220px] h-[100px] p-2.5 bg-blue-500 rounded-lg right-[9%] bottom-[45%]">
+              <div className="absolute w-[230px] h-[135px] p-2.5 bg-blue-500 rounded-lg right-[9%] bottom-[46%]">
                 <p className="text-white text-sm font-semibold flex items-center ">
                   <img
                     className="w-4 mr-2"
@@ -1104,6 +1303,42 @@ const Network = () => {
                     alt="Philippines Flag"
                   />
                   Philippines
+                </p>
+
+                <p className="text-white sm:text-sm text-xs flex items-center ">
+                  <svg
+                    className="w-5 mr-1 text-red-600"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      d="m3.5 5.5 7.9 6c.4.3.8.3 1.2 0l7.9-6M4 19h16c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H4a1 1 0 0 0-1 1v12c0 .6.4 1 1 1Z"
+                    />
+                  </svg>
+                  cesar@gotophilippines.com.ph
+                </p>
+                <p className="text-white sm:text-sm text-xs flex items-center ">
+                  <svg
+                    className="w-5 mr-1 text-red-600"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m18.4 14.8-1.2-1.3a1.7 1.7 0 0 0-2.4 0l-.7.7a1.7 1.7 0 0 1-2.4 0l-1.9-1.9a1.7 1.7 0 0 1 0-2.4l.7-.6a1.7 1.7 0 0 0 0-2.5L9.2 5.6a1.6 1.6 0 0 0-2.4 0c-3.2 3.2-1.7 6.9 1.5 10 3.2 3.3 7 4.8 10.1 1.6a1.6 1.6 0 0 0 0-2.4Z"
+                    />
+                  </svg>
+                  +63-2-397-9198
                 </p>
 
                 <p className="text-white text-sm flex items-start ">
