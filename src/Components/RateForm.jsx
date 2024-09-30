@@ -77,10 +77,10 @@ const RateForm = () => {
                   </option>
                   <option value="lcl_sea_export">LCL - Sea Export</option>
                   <option value="fcl_sea_export">FCL - Sea Export</option>
-                  <option value="air_export">AIR Export</option>
-                  <option value="lcl_sea_import">LCL - SEA Import</option>
-                  <option value="fcl_sea_import">FCL - SEA Import</option>
-                  <option value="air_import">AIR Import</option>
+                  <option value="air_export">Air Export</option>
+                  <option value="lcl_sea_import">LCL - Sea Import</option>
+                  <option value="fcl_sea_import">FCL - Sea Import</option>
+                  <option value="air_import">Air Import</option>
                 </select>
 
                 <button

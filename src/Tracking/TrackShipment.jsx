@@ -58,7 +58,7 @@ export default function TrackShipment() {
   };
 
   return (
-    <div className="bg-white h-48 shadow-lg mx-auto my-3 sm:my-6">
+    <div className="bg-white h-[210px] sm:h-48 shadow-lg mx-auto my-3 sm:my-6">
       <motion.span
         initial={{ opacity: 0, y: -200 }} // Start with opacity 0 and 20px above the original position
         animate={{ opacity: 1, y: 0 }} // Animate to full opacity and original position
