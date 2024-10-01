@@ -22,7 +22,6 @@ import staff from "../assets/GS_staff.png";
 import truck from "../assets/GS_truck.png";
 import Scroll_Top from "../Components/Scroll_Top";
 import Extra_features from "../Components/Extra_features";
-import Scroll_Top from "../Components/Scroll_Top";
 
 function Freight_forwarding() {
   return (

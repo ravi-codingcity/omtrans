@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { motion } from "framer-motion";
+import { FaMapMarkerAlt, FaBriefcase, FaTrash, FaEdit } from "react-icons/fa";
 
 const JobPortal = () => {
   const [jobData, setJobData] = useState({
@@ -31,7 +33,6 @@ const JobPortal = () => {
     const { name, value } = e.target;
     setJobData({ ...jobData, [name]: value });
 
-    // Update word count for the description field
     if (name === "description") {
       const words = value
         .trim()
@@ -59,7 +60,7 @@ const JobPortal = () => {
       }
       setJobData({ title: "", description: "", location: "" });
       setEditingJobId(null);
-      setWordCount(0); // Reset word count after submission
+      setWordCount(0);
       fetchJobs();
     } catch (error) {
       console.error("Error posting/updating job:", error);
@@ -73,7 +74,7 @@ const JobPortal = () => {
       .trim()
       .split(/\s+/)
       .filter((word) => word.length > 0);
-    setWordCount(words.length); // Set initial word count for editing
+    setWordCount(words.length);
   };
 
   const handleDelete = async (id) => {
@@ -90,92 +91,109 @@ const JobPortal = () => {
     }
   };
 
-  // Function to format the date
   const formatDate = (dateString) => {
     const options = { year: "numeric", month: "long", day: "numeric" };
     return new Date(dateString).toLocaleDateString(undefined, options);
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="w-full  p-6 bg-gradient-to-r from-green-100 to-blue-100">
       <div className="flex flex-col items-center justify-center mb-5">
-        <h1 className="text-3xl font-bold text-red-600">OmTrans Job Portal</h1>
+        <motion.h1
+          className="text-4xl font-bold text-red-600"
+          animate={{ scale: 1.1 }}
+        >
+          OmTrans Job Portal
+        </motion.h1>
       </div>
 
-      <form
-        onSubmit={handleSubmit}
-        className="mb-4 p-4 border rounded shadow-md bg-white"
-      >
-        <input
-          type="text"
-          name="title"
-          placeholder="Job Title"
-          value={jobData.title}
-          onChange={handleChange}
-          required
-          className="border rounded p-2 mb-2 w-full"
-        />
-        <div className="relative">
-          <textarea
-            name="description"
-            placeholder="Job Description"
-            value={jobData.description}
+      <div className="max-w-screen-lg m-auto">
+        <motion.form
+          onSubmit={handleSubmit}
+          className="mb-6 p-6 border rounded-lg shadow-lg bg-white"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
+          <input
+            type="text"
+            name="title"
+            placeholder="Job Title"
+            value={jobData.title}
             onChange={handleChange}
             required
-            className={`border rounded p-4 mb-2 w-full ${
-              wordCount > WORD_LIMIT ? "border-red-500" : ""
-            }`}
+            className="border rounded-lg p-3 mb-3 w-full focus:outline-none focus:ring focus:ring-blue-300"
           />
-          <span className="absolute right-2 top-2 text-sm">
-            {wordCount}/{WORD_LIMIT}
-          </span>
-        </div>
-        <input
-          type="text"
-          name="location"
-          placeholder="Job Location"
-          value={jobData.location}
-          onChange={handleChange}
-          required
-          className="border rounded p-2 mb-2 w-full"
-        />
+          <div className="relative mb-3">
+            <textarea
+              name="description"
+              placeholder="Job Description"
+              value={jobData.description}
+              onChange={handleChange}
+              required
+              className={`border rounded-lg p-3 w-full focus:outline-none focus:ring ${
+                wordCount > WORD_LIMIT
+                  ? "border-red-500"
+                  : "focus:ring-green-300"
+              }`}
+            />
+            <span className="absolute right-3 top-3 text-sm text-gray-500">
+              {wordCount}/{WORD_LIMIT}
+            </span>
+          </div>
+          <input
+            type="text"
+            name="location"
+            placeholder="Job Location"
+            value={jobData.location}
+            onChange={handleChange}
+            required
+            className="border rounded-lg p-3 mb-3 w-full focus:outline-none focus:ring focus:ring-blue-300"
+          />
 
-        <button
-          type="submit"
-          className="bg-green-600 text-white rounded p-2 font-semibold w-full"
-        >
-          {editingJobId ? "Update Job" : "Post Job"}
-        </button>
-      </form>
-
-      <div className="job-list">
-        {jobs.map((job) => (
-          <div
-            key={job._id}
-            className="border rounded shadow-md p-4 mb-4 bg-white"
+          <motion.button
+            type="submit"
+            className="bg-blue-600 text-white rounded-lg p-3 font-semibold w-full hover:bg-blue-700 transition-colors duration-300"
+            whileHover={{ scale: 1.05 }}
           >
-            <h2 className="text-xl font-bold">{job.title}</h2>
-            <p>{job.description}</p>
-            <p className="text-gray-500">{job.location}</p>
-            {/* Display the date from the job's datePosted field */}
-            <p className="text-gray-500">
+            {editingJobId ? "Update Job" : "Post Job"}
+          </motion.button>
+        </motion.form>
+      </div>
+
+      <div className="job-list grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {jobs.map((job) => (
+          <motion.div
+            key={job._id}
+            className="border rounded-lg shadow-md p-6 bg-white"
+            whileHover={{ scale: 1.05 }}
+          >
+            <h2 className="text-2xl font-bold mb-2 text-blue-800 flex items-center">
+              <FaBriefcase className="mr-2" /> {job.title}
+            </h2>
+            <p className="mb-2">{job.description}</p>
+            <p className="text-gray-600 flex items-center mb-2">
+              <FaMapMarkerAlt className="mr-2" /> {job.location}
+            </p>
+            <p className="text-gray-500 mb-4">
               Posted on: {formatDate(job.datePosted)}
             </p>
-            <div className="flex justify-between mt-2">
-              <button
+            <div className="flex justify-between">
+              <motion.button
                 onClick={() => handleEdit(job)}
-                className="bg-blue-500 text-white rounded p-2"
+                className="bg-yellow-500 text-white rounded-lg p-2 flex items-center hover:bg-yellow-600"
+                whileHover={{ scale: 1.05 }}
               >
-                Edit
-              </button>
-              <button
+                <FaEdit className="mr-1" /> Edit
+              </motion.button>
+              <motion.button
                 onClick={() => handleDelete(job._id)}
-                className="bg-red-500 text-white rounded p-2"
+                className="bg-red-500 text-white rounded-lg p-2 flex items-center hover:bg-red-600"
+                whileHover={{ scale: 1.05 }}
               >
-                Delete
-              </button>
+                <FaTrash className="mr-1" /> Delete
+              </motion.button>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

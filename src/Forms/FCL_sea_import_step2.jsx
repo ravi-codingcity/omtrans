@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { useNavigate } from "react-router-dom";
@@ -511,81 +511,85 @@ function LCL_sea_export_step2() {
     // Add more form fields as needed
   });
 
-  // Helper function to fetch reference number from backend
-  const fetchReferenceNumber = async () => {
-    try {
-      const response = await fetch(
-        "https://new-backend-yulp.onrender.com/api/reference",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+ // Local state for the reference number
+ const [referenceNumber, setReferenceNumber] = useState(null);
 
-      if (!response.ok) {
-        throw new Error(`Server Error: ${response.status}`);
-      }
+ // Helper function to fetch reference number from backend
+ const fetchReferenceNumber = async () => {
+   try {
+     const response = await fetch(
+       "https://new-backend-yulp.onrender.com/api/reference",
+       {
+         method: "POST",
+         headers: {
+           "Content-Type": "application/json",
+         },
+       }
+     );
 
-      const data = await response.json();
-      return data.reference_number;
-    } catch (error) {
-      console.error("Error fetching reference number:", error);
-      return null;
-    }
-  };
+     if (!response.ok) {
+       throw new Error(`Server Error: ${response.status}`);
+     }
 
-  const handleChange = (e) => {
-    setForm2Data({
-      ...form2Data,
-      [e.target.name]: e.target.value,
-    });
-  };
+     const data = await response.json();
+     console.log("Fetched Reference Number:", data.reference_number); // Log fetched reference number
+     setReferenceNumber(data.reference_number); // Set reference number to local state
+     return data.reference_number;
+   } catch (error) {
+     console.error("Error fetching reference number:", error);
+     return null;
+   }
+ };
 
-  const sendEmail = async (e) => {
-    e.preventDefault();
-    setPending(true);
+ useEffect(() => {
+   // Fetch reference number when the component mounts
+   fetchReferenceNumber();
+ }, []);
 
-    // Retrieve data from local storage
-    const form1Data = JSON.parse(localStorage.getItem("form1Data"));
+ const handleChange = (e) => {
+   setForm2Data({
+     ...form2Data,
+     [e.target.name]: e.target.value,
+   });
+ };
 
-    // Fetch the unique reference number from the server
-    const newReferenceNumber = await fetchReferenceNumber();
+ const sendEmail = async (e) => {
+   e.preventDefault();
+   setPending(true);
 
-    if (!newReferenceNumber) {
-      setPending(false);
-      console.error("Failed to fetch reference number.");
-      return;
-    }
+   // Check if reference number is already fetched
+   if (!referenceNumber) {
+     console.error("Reference number is not available."); // Log error if reference number is not available
+     setPending(false);
+     return;
+   }
 
-    // Update form2Data with the fetched reference number
-    const updatedForm2Data = {
-      ...form2Data,
-      reference_number: newReferenceNumber,
-    };
+   // Update form2Data with the fetched reference number
+   const updatedForm2Data = {
+     ...form2Data,
+     reference_number: referenceNumber,
+   };
 
-    // Combine data from form1 and form2
-    const combinedData = {
-      ...form1Data,
-      ...form2Data,
-      reference_number: newReferenceNumber,
-    };
+   // Combine data from form1 and form2
+   const combinedData = {
+     ...JSON.parse(localStorage.getItem("form1Data")), // Combine form1 data
+     ...updatedForm2Data,
+   };
 
-    // Send combined data via EmailJS
-    emailjs
-      .send("service_8kjg68f", "template_pigu21j", combinedData, {
-        publicKey: "WP8GUCcsZ82MFUSAr",
-      })
-      .then(
-        () => {
-          setPending(false);
-          console.log("SUCCESS!");
-          form.current.reset();
-          localStorage.removeItem("form1Data"); // Clear local storage
+   // Send combined data via EmailJS
+   emailjs
+     .send("service_8kjg68f", "template_pigu21j", combinedData, {
+       publicKey: "WP8GUCcsZ82MFUSAr",
+     })
+     .then(
+       () => {
+         setPending(false);
+         console.log("SUCCESS!");
+         form.current.reset();
+         localStorage.removeItem("form1Data"); // Clear local storage
 
-          // Store reference number for Thank You page
-          localStorage.setItem("referenceNumber", newReferenceNumber);
+         // Store reference number for Thank You page
+         localStorage.setItem("referenceNumber", referenceNumber);
 
           navigate("/fcl_sea_export/thank_you");
           window.scrollTo(0, 0);

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { useNavigate } from "react-router-dom";
@@ -511,6 +511,9 @@ function Air_import_step2() {
     // Add more form fields as needed
   });
 
+  // Local state for the reference number
+  const [referenceNumber, setReferenceNumber] = useState(null);
+
   // Helper function to fetch reference number from backend
   const fetchReferenceNumber = async () => {
     try {
@@ -529,12 +532,19 @@ function Air_import_step2() {
       }
 
       const data = await response.json();
+      console.log("Fetched Reference Number:", data.reference_number); // Log fetched reference number
+      setReferenceNumber(data.reference_number); // Set reference number to local state
       return data.reference_number;
     } catch (error) {
       console.error("Error fetching reference number:", error);
       return null;
     }
   };
+
+  useEffect(() => {
+    // Fetch reference number when the component mounts
+    fetchReferenceNumber();
+  }, []);
 
   const handleChange = (e) => {
     setForm2Data({
@@ -547,29 +557,23 @@ function Air_import_step2() {
     e.preventDefault();
     setPending(true);
 
-    // Retrieve data from local storage
-    const form1Data = JSON.parse(localStorage.getItem("form1Data"));
-
-    // Fetch the unique reference number from the server
-    const newReferenceNumber = await fetchReferenceNumber();
-
-    if (!newReferenceNumber) {
+    // Check if reference number is already fetched
+    if (!referenceNumber) {
+      console.error("Reference number is not available."); // Log error if reference number is not available
       setPending(false);
-      console.error("Failed to fetch reference number.");
       return;
     }
 
     // Update form2Data with the fetched reference number
     const updatedForm2Data = {
       ...form2Data,
-      reference_number: newReferenceNumber,
+      reference_number: referenceNumber,
     };
 
     // Combine data from form1 and form2
     const combinedData = {
-      ...form1Data,
-      ...form2Data,
-      reference_number: newReferenceNumber,
+      ...JSON.parse(localStorage.getItem("form1Data")), // Combine form1 data
+      ...updatedForm2Data,
     };
 
     // Send combined data via EmailJS
@@ -585,7 +589,7 @@ function Air_import_step2() {
           localStorage.removeItem("form1Data"); // Clear local storage
 
           // Store reference number for Thank You page
-          localStorage.setItem("referenceNumber", newReferenceNumber);
+          localStorage.setItem("referenceNumber", referenceNumber);
 
           navigate("/air_export/thank_you");
           window.scrollTo(0, 0);
