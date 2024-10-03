@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Bg_map from "../assets/bg_map_1.png";
+import Bg_map from "../assets/bg_map_4.png";
 import Goto from "../assets/goto.png";
 import seair from "../assets/seair_2.png";
 import jc_omtrax from "../assets/jc_omtrax_1.png";
@@ -1167,7 +1167,7 @@ const Network = () => {
                       d="m18.4 14.8-1.2-1.3a1.7 1.7 0 0 0-2.4 0l-.7.7a1.7 1.7 0 0 1-2.4 0l-1.9-1.9a1.7 1.7 0 0 1 0-2.4l.7-.6a1.7 1.7 0 0 0 0-2.5L9.2 5.6a1.6 1.6 0 0 0-2.4 0c-3.2 3.2-1.7 6.9 1.5 10 3.2 3.3 7 4.8 10.1 1.6a1.6 1.6 0 0 0 0-2.4Z"
                     />
                   </svg>
-                  +91-123456789
+                  +91-20-41311069
                 </p>
                 <p className="text-white sm:text-sm text-xs flex items-center">
                   <svg

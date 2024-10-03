@@ -270,15 +270,17 @@ function Home() {
           img={Blog1}
           date="28"
           month="September"
-          title="OmTrans Moves 60ft BOPP Line from Nhava Sheva to Jammu!"
-          description="We are proud to announce the successful movement of a 60ft long BOPP line from Nhava Sheva to Jammu. As a trusted name in freight forwarding, we ensure that even the most complex logistics are handled with precision, ensuring timely and safe delivery. This achievement underscores our commitment to delivering excellence across every mile."
+          year="2024"
+          title="OmTrans Moves 60ft BOPP Line from Nhava Sheva to Jammu."
+          description="We are proud to announce the successful delivery of a 60ft long BOPP line from Nhava Sheva to Jammu. As a trusted name in freight forwarding, we ensure that even the most complex logistics are handled with precision, ensuring timely and safe delivery. This achievement underscores our commitment to delivering excellence across every mile."
         />
 
         <Blog
           img={Blog2}
           date="30"
           month="September"
-          title="OmTrans Completes First Joint Project Cargo with Goto Japan"
+          year="2024"
+          title="OmTrans Completes First Joint Project with Partner Company Goto Korea."
           description="OmTrans is excited to share the successful delivery of first joint Project cargo after partnership with Goto Japan.The project was moved jointly with Goto Korea Ex Masan Port ( Korea ) to MBPT ( Mumbai ) and further truck down to final destination at Door in Noida. The project consisted of 36 pieces and all the pieces were Over dimension. The heaviest equipment weight was 149 MT & 91 MT."
         />
 
@@ -286,7 +288,8 @@ function Home() {
           img={Blog3}
           date="15"
           month="August"
-          title="Delivered 150 Tonnes of Medicines during Covid "
+          year="2022"
+          title="Delivered 150 Tonnes of Medicines during Covid."
           description="We take pride in mentioning that during the first wave of Pandemic, we moved over 50 tons of Covid related medicines to Brazil by Air freight maintained in cold chain temperature. It was a challenging task due to lockdown to handle operations at airport with negligible transportation, ground team."
         />
 

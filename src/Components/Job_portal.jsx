@@ -97,7 +97,7 @@ const JobPortal = () => {
   };
 
   return (
-    <div className="w-full  p-6 bg-gradient-to-r from-green-100 to-blue-100">
+    <div className="w-full  p-6 ">
       <div className="flex flex-col items-center justify-center mb-5">
         <motion.h1
           className="text-4xl font-bold text-red-600"

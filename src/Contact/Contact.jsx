@@ -5,10 +5,12 @@ import BgImg from "../assets/our_services.jpg";
 import Icon_call from "../assets/phoneno.png";
 import Icon_sms from "../assets/email.png";
 import Icon_location from "../assets/location.png";
+import Icon_time from "../assets/w_icon7.png";
 import MyFaq from "../Components/FaqFF";
 import Companies_logo from "../Components/Companies_logo";
 import Office_Card from "../Components/Office_Card";
 import emailjs from "@emailjs/browser";
+import Scroll_Top from "../Components/Scroll_Top";
 
 function Contact() {
   const form = useRef();
@@ -18,18 +20,15 @@ function Contact() {
     e.preventDefault();
     setsendButton(true);
 
-    console.log("User Name:", form.current["user_name"].value);
-    console.log("User Email:", form.current["user_email"].value);
-    console.log("Shippment Details:", form.current["message"].value);
-
     emailjs
-      .sendForm("service_zgk525k", "template_pigu21j", form.current, {
-        publicKey: "WP8GUCcsZ82MFUSAr",
+      .sendForm("service_04u0cox", "template_l5iu6gd", form.current, {
+        publicKey: "ZBesjVFYR6UiVfrP4",
       })
       .then(
         () => {
           console.log("SUCCESS!");
           setsendButton(false);
+          form.current.reset(); // Clear the form after successful submission
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -121,7 +120,7 @@ function Contact() {
                     <input
                       className=" sm:w-48 w-80 my-2 ring-1 focus:ring-1  placeholder:text-gray-400 placeholder:px-2 placeholder:py-1 py-2 px-2 bg-transparent"
                       type="text"
-                      name="user_name"
+                      name="name"
                       placeholder="Name"
                     />
                   </div>
@@ -130,7 +129,7 @@ function Contact() {
                     <input
                       type="email"
                       placeholder="Email"
-                      name="user_email"
+                      name="email"
                       className="sm:w-48 w-80 my-2 ring-1 focus:ring-1 placeholder:text-gray-400  placeholder:px-2   placeholder:py-1 py-2 px-2 bg-transparent"
                     />
                   </div>
@@ -141,7 +140,7 @@ function Contact() {
                     <input
                       className="sm:w-48 w-80 my-2 ring-1 focus:ring-1 placeholder:text-gray-400  placeholder:px-2 placeholder:py-1 py-2 px-2 bg-transparent"
                       type="text"
-                      name="phoneno"
+                      name="contact"
                       placeholder="Phone No."
                     />
                   </div>
@@ -156,7 +155,7 @@ function Contact() {
                   </div>
                 </div>
                 <div className="py-2 text-center text-white ">
-                  <label htmlFor="city"></label>
+                  <label htmlFor="message"></label>
                   <textarea
                     rows={3}
                     type="text"
@@ -168,11 +167,35 @@ function Contact() {
 
                 <div className="m-auto text-center py-4">
                   <button
-                    className=" bg-gray-300 py-4 px-6 hover:scale-110 duration-300 rounded-md"
+                    className=" bg-gray-300 py-4 px-6 hover:scale-110 duration-300 rounded-md "
                     type="submit"
                     value="send"
+                    disabled={sendButton}
                   >
-                    {sendButton ? "Loading..." : "Send Message"}
+                    {sendButton ? (
+                      <svg
+                        className="animate-spin h-5 w-10 text-black inline-block"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        ></circle>
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8v2a6 6 0 00-6 6H4z"
+                        ></path>
+                      </svg>
+                    ) : (
+                      "Send Message"
+                    )}
                   </button>
                 </div>
               </div>
@@ -268,22 +291,28 @@ function Contact() {
               <div className="text-white text-xl">
                 You need any help? get free consultation
               </div>
-              <div className="flex py-4 m-auto items-start gap-4">
-                <div>
+              <div className="flex flex-col py-4 m-auto items-start gap-4">
+                <div className="flex">
                   <img src={Icon_call} alt="" />
+                  <div className="text-white ml-3">
+                    <p>Have Any Questions</p>
+                    <p>+91-11-48316700</p>
+                  </div>
                 </div>
-                <div className="text-white">
-                  <p>Have Any Questions</p>
-                   <p>+91-11-48316700</p><br />
-                  <p>Monday - Saturday</p>
-                  <p>10:00 AM to 06:00 PM (Available)</p>
+
+                <div className="flex">
+                  <img src={Icon_time} alt="" className="w-14 h-14" />
+                  <div className="text-white ml-3">
+                    <p>Monday - Saturday</p>
+                    <p>10:00 AM to 06:00 PM (Available)</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+      <Scroll_Top />
       <Footer />
     </div>
   );

@@ -66,7 +66,7 @@ const RateForm = () => {
               </h2>
               <div className="max-w-screen-lg m-auto flex flex-col sm:flex-row justify-center sm:pt-5 pt-2 items-center sm:space-y-0 sm:space-x-4">
                 <select
-                  className="bg-gray-100 border border-blue-500 focus:ring-blue-500 focus:outline-none col-span-3 text-gray-800 block py-3 px-4 sm:w-[450px] w-80 shadow-md transition-all duration-300 ease-in-out hover:bg-white  pr-10 pl-4"
+                  className="bg-gray-100 border border-blue-500 focus:ring-blue-500 focus:outline-none text-gray-800 block py-3 px-4 sm:w-[450px] w-80 shadow-md transition-all duration-300 ease-in-out hover:bg-white "
                   value={selectedOption}
                   onChange={(e) => {
                     setSelectedOption(e.target.value);

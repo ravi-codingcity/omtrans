@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import logo from "../assets/omtrans_logo.png";
 import { IoIosArrowDown } from "react-icons/io";
-import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaFacebook,
+  FaLinkedin,
+  FaPinterest,
+} from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { NavLink, useNavigate } from "react-router-dom";
@@ -165,7 +170,7 @@ function Navbar() {
               <FaInstagram className="hover:text-red-600 cursor-pointer duration-200" />
             </a>
             <a
-              href="https://www.facebook.com/yourusername"
+              href="https://www.facebook.com/omtrans/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -177,6 +182,13 @@ function Navbar() {
               rel="noopener noreferrer"
             >
               <FaLinkedin className="hover:text-red-600 cursor-pointer duration-200" />
+            </a>
+            <a
+              href="https://in.pinterest.com/om_trans_logistic/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaPinterest className="hover:text-red-600 cursor-pointer duration-200" />
             </a>
           </div>
 

@@ -9,6 +9,7 @@ import about_us_img from "../assets/about_us_container.jpg";
 import Experts from "../Components/Experts";
 import Vikran_sir from "../assets/vikram_sir_1.jpg";
 import ajay_singhal from "../assets/ajay_singhal.jpg";
+import kapil_sir from "../assets/kapil_sir.jpg";
 import Companies_logo from "../Components/Companies_logo";
 import about_us_img_network from "../assets/Networking.jpg";
 import certificate_1 from "../assets/certificate_1.jpg";
@@ -81,28 +82,32 @@ function About_us() {
       {/* Management */}
 
       <div className=" py-6 bg-slate-100">
-        <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-24 m-auto">
-          OmTrans
-        </p>
         <h3 className="sm:text-4xl text-3xl font-bold	text-[#1C1F35]	py-2 text-center">
           Management
         </h3>
         <div className="flex justify-center py-6 flex-wrap ">
           <div className="py-2 sm:my-0 my-4 mx-2">
-            <Experts img={ajay_singhal} name="Mr. Ajay Singhal" title="" />
-          </div>
-          <div className="py-2 sm:my-0 my-4 mx-2">
             <Experts
-              img={Vikran_sir}
-              name="Mr. Vikram Garg"
-              title="(Director) "
+              img={ajay_singhal}
+              name="Mr. Ajay Singhal"
+              title=""
+              linkedinUrl="https://www.linkedin.com/in/ajay-singhal-omlogistics/"
             />
           </div>
           <div className="py-2 sm:my-0 my-4 mx-2">
             <Experts
               img={Vikran_sir}
+              name="Mr. Vikram Garg"
+              title="(Director)"
+              linkedinUrl="https://www.linkedin.com/in/vikram-garg-93153a15/"
+            />
+          </div>
+          <div className="py-2 sm:my-0 my-4 mx-2">
+            <Experts
+              img={kapil_sir}
               name="Mr. Kapil Dalmia"
-              title="(Director) "
+              title="(Director)"
+              linkedinUrl="https://www.linkedin.com/in/kapil-dalmia-3306721b/"
             />
           </div>
         </div>

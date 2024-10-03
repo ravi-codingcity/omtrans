@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import BgImg1 from "../assets/Backgroundc.jpg";
 import BgImg2 from "../assets/Bg_7.jpg";
-import BgImg4 from "../assets/Bg_8.jpg";
+import BgImg4 from "../assets/Bg_9.jpg";
 import BgImg5 from "../assets/Bg_6.jpg";
 
 const slides = [

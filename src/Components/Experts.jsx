@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 function Experts(props) {
   return (
@@ -11,7 +11,9 @@ function Experts(props) {
           <span className="text-base px-4">{props.title}</span>
         </div>
         <div className="text-white">
-          <FaLinkedin className="text-3xl hover:scale-110 duration-300 cursor-pointer mx-1" />
+          <a href={props.linkedinUrl} target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="text-3xl hover:scale-110 duration-300 cursor-pointer mx-1" />
+          </a>
         </div>
       </div>
     </div>

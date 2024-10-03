@@ -4,7 +4,12 @@ import FooterImg from "../assets/footer.jpg";
 import logo from "../assets/omtrans_logo.png";
 import { CiMail } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
-import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaFacebook,
+  FaLinkedin,
+  FaPinterest,
+} from "react-icons/fa";
 import iso1 from "../assets/iso1.png";
 import iso2 from "../assets/iso2.png";
 import iso3 from "../assets/iso3.png";
@@ -163,13 +168,40 @@ function Footer() {
 
       <div className="flex items-center justify-center bg-[#091242] text-white py-3 text-xl">
         <div className="px-2">
-          <FaFacebook className="hover:scale-110 duration-300 rounded-md cursor-pointer" />
+          <a
+            href="https://www.facebook.com/omtrans/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook className="hover:scale-110 duration-300 rounded-md cursor-pointer" />
+          </a>
         </div>
         <div className="px-2">
-          <FaInstagram className="hover:scale-110 duration-300 rounded-md cursor-pointer" />
+          <a
+            href="https://www.instagram.com/omtransltd/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="hover:scale-110 duration-300 rounded-md cursor-pointer" />
+          </a>
         </div>
         <div className="px-2">
-          <FaLinkedin className="hover:scale-110 duration-300 rounded-md cursor-pointer" />
+          <a
+            href="https://www.linkedin.com/company/om-trans-logistics-limited/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="hover:scale-110 duration-300 rounded-md cursor-pointer" />
+          </a>
+        </div>
+        <div className="px-2">
+          <a
+            href="https://in.pinterest.com/om_trans_logistic/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaPinterest className="hover:scale-110 duration-300 rounded-md cursor-pointer" />
+          </a>
         </div>
       </div>
 

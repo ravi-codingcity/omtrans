@@ -7,6 +7,7 @@ import { LuPalmtree } from "react-icons/lu";
 import { GiLifeSupport } from "react-icons/gi";
 import { GoLaw } from "react-icons/go";
 import { BiLineChart } from "react-icons/bi";
+import Scroll_Top from "../Components/Scroll_Top";
 
 import Footer from "../Footer/Footer";
 import { useNavigate } from "react-router-dom";
@@ -131,6 +132,7 @@ function sustainability() {
           </div>
         </div>
       </div>
+      <Scroll_Top />
       <Footer />
     </div>
   );
