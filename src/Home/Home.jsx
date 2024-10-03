@@ -47,7 +47,7 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-    <div>
+        <div>
       <Navbar />
 
       {/* Header */}
@@ -130,7 +130,7 @@ function Home() {
       </div>
 
       <div className="flex justify-center flex-col sm:flex-row  max-w-screen-lg m-auto">
-        <div className=" sm:pl-10   bg-white sm:pt-6 pt-6 sm:w-1/2 w-full px-5 sm:px-0">
+        <div className=" sm:pl-10   bg-white sm:pt-6 pt-6 sm:w-1/2 w-full px-4 sm:px-0">
           <h3 className="sm:text-4xl text-3xl font-bold text-[#1C1F35] py-2 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-[#ff3d3d] after:mt-3">
             Why Choose Us
           </h3>
@@ -140,7 +140,7 @@ function Home() {
             countries, We specialize in providing a full range of logistics
             services, including air, ocean, and land transportation.
           </p>
-          <div className=" grid grid-cols-2  py-5">
+          <div className=" grid grid-cols-2  py-5 ">
             <Choose_icon icon={Icon_5} title="24+ Years of Experience" />
             <Choose_icon icon={Icon_6} title="Optimized Logistics Cost" />
             <Choose_icon icon={Icon_7} title="Best Connectivity Options" />
