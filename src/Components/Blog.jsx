@@ -9,6 +9,7 @@ function Blog(props) {
       </div>
       <div className="text-center sm:py-0 py-4">
         <img src={Calendar} alt="" className="m-auto" />
+        <p className="font-normal text-gray-600 text-base pt-1">Posted on:</p>
         <p className="text-4xl font-bold	leading-none	py-2">
           {props.date}
           <p className="font-normal text-xl">{props.month}</p>

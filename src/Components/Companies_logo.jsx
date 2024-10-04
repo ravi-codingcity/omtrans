@@ -142,7 +142,7 @@ function Companies_logo() {
           />
         </a>
 
-        <a href="www.seairlinks.vn" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.seairlinks.vn/" target="_blank" rel="noopener noreferrer">
           <img
             src={seair}
             alt=""

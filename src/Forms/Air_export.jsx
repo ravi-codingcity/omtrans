@@ -260,7 +260,7 @@ function Air_export() {
                     type="text"
                     id="airport_of_departure"
                     className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
-                    placeholder="Enter Your Airport of Departure"
+                    placeholder="Airport of Departure"
                     required
                     onChange={handleChange}
                   />
@@ -283,7 +283,7 @@ function Air_export() {
                     type="text"
                     id="airport_of_destination"
                     className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
-                    placeholder="Enter Your Airport of Destination"
+                    placeholder="Airport of Destination"
                     required
                     onChange={handleChange}
                   />
@@ -315,7 +315,7 @@ function Air_export() {
                     type="text"
                     id="number_of_pkgs"
                     className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
-                    placeholder="Enter Your Number of PKG"
+                    placeholder="Enter Number of PKG"
                     onChange={handleChange}
                   />
                 </div>
@@ -334,7 +334,7 @@ function Air_export() {
                     type="text"
                     id="pkg_dimension"
                     className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
-                    placeholder="Enter Your PKG Dimension"
+                    placeholder="Enter PKG Dimension"
                     onChange={handleChange}
                   />
                 </div>
@@ -429,7 +429,7 @@ function Air_export() {
                   {isCustom && (
                     <input
                       type="text"
-                      placeholder="Enter Custom HS Code"
+                      placeholder="Enter HS Code"
                       value={customHSCode}
                       onChange={handleInputChange}
                       className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 ml-2"
@@ -463,7 +463,7 @@ function Air_export() {
                     type="text"
                     id="pick_up_address"
                     className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
-                    placeholder="Enter Your Pick up Address"
+                    placeholder="Enter Pick up Address"
                     onChange={handleChange}
                   />
                 </div>
@@ -510,7 +510,7 @@ function Air_export() {
                   type="text"
                   id="Cargo Weight"
                   className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
-                  placeholder="Enter Your Cargo Weight"
+                  placeholder="Enter Cargo Weight"
                   onChange={handleChange}
                 />
               </div>
@@ -529,7 +529,7 @@ function Air_export() {
                   type="text"
                   id="cargo_value"
                   className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 flex-grow ml-3"
-                  placeholder="Enter Your Cargo Value"
+                  placeholder="Enter Cargo Value"
                   onChange={handleChange}
                 />
               </div>

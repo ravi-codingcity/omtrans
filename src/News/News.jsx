@@ -3,8 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import BgImg from "../assets/News_img.jpg";
 import Blog1 from "../assets/blog_2.jpg";
-import Blog2 from "../assets/transport_b.jpg";
-import Blog3 from "../assets/blog_3.jpg";
+import Blog2 from "../assets/Blog_6.jpg";
 import Blog4 from "../assets/blog_img_4.jpeg";
 import Blog5 from "../assets/blog_img_5.jpeg";
 import Blog from "../Components/Blog";
@@ -45,8 +44,8 @@ function News() {
 
         <Blog
           img={Blog5}
-          date="28"
-          month="September"
+          date="02"
+          month="July"
           year="2024"
           title="OmTrans Completes First Joint Project with Partner Company Goto Korea."
           description="Omtrans is excited to share the successful delivery of first joint Project cargo after partnership with Goto Japan.The project was moved jointly with Goto Korea Ex Masan Port ( Korea ) to MBPT ( Mumbai ) and further truck down to final destination at Door in Noida. The project consisted of 36pieces and all the pieces were Over dimension. The heaviest equipment weight was 149MT & 91MT ."
@@ -66,18 +65,11 @@ function News() {
           date="08"
           month="September"
           year="2022"
-          title="Saving Freight cost by 50%"
+          title="Saving Freight Cost by 50%"
           description="With having experience team OmTrans have helped their Exporters in saving 50% freight cost by moving the cargo through Break Bulk to Houston and Baltimore which was really appreciated by the Exporters. OmTrans has successfully delivered 4000 metric tonnes of cargo and monthly moving such volume of cargo to Houston & Baltimore through Break Bulk."
         />
 
-        <Blog
-          img={Blog3}
-          date="15"
-          month="August"
-          year="2021"
-          title="Delivered 150 Tonnes of Medicines during Covid "
-          description="We take pride in mentioning that during the first wave of Pandemic, we moved over 50 tons of Covid related medicines to Brazil by Air freight maintained in cold chain temperature. It was a challenging task due to lockdown to handle operations at airport with negligible transportation, ground team."
-        />
+       
       </div>
       <Scroll_Top />
       <Footer />

@@ -46,7 +46,7 @@ function Navbar() {
       </div>
 
       <div
-        className={`absolute  w-full sm:static sm:flex sm:justify-around items-center text-black bg-slate-100 sm:bg-white sm:text-base text-base font-medium	 z-10  ${
+        className={`absolute max-w-screen-xl m-auto w-full sm:static sm:flex sm:justify-around items-center text-black bg-slate-100 sm:bg-white sm:text-base text-base font-medium	 z-10  ${
           showNav ? "block duration-300" : "hidden "
         } sm:block`}
       >
@@ -190,18 +190,6 @@ function Navbar() {
             >
               <FaPinterest className="hover:text-red-600 cursor-pointer duration-200" />
             </a>
-          </div>
-
-          <div className="relative hidden sm:block">
-            <button
-              onClick={() => {
-                navigate("/lcl_sea_export");
-                window.scrollTo(0, 0);
-              }}
-              className="block bg-red-600 text-white py-3 px-4 hover:bg-[#a50a0f] hover:text-white duration-200"
-            >
-              Request Quote
-            </button>
           </div>
         </div>
       </div>

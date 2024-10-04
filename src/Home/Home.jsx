@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import BgImg1 from "../assets/Background1.jpg";
+import BgImg1 from "../assets/Background_1.jpg";
 import Automotive from "../assets/automotive.jpg";
 import Technology from "../assets/technology.jpg";
 import Healthcare from "../assets/healthcare.jpg";
@@ -24,7 +24,7 @@ import Icon_9 from "../assets/w_icon3.png";
 import Icon_10 from "../assets/w_icon4.png";
 import Blog1 from "../assets/blog_img_4.jpeg";
 import Blog2 from "../assets/blog_img_5.jpeg";
-import Blog3 from "../assets/blog_3.jpg";
+import Blog3 from "../assets/Blog_6.jpg";
 import Footer from "../Footer/Footer";
 import Img_card from "../Components/Img_card";
 import Testimonials from "../Components/Testimonials";
@@ -47,7 +47,7 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-        <div>
+    <div>
       <Navbar />
 
       {/* Header */}
@@ -277,8 +277,8 @@ function Home() {
 
         <Blog
           img={Blog2}
-          date="30"
-          month="September"
+          date="02"
+          month="July"
           year="2024"
           title="OmTrans Completes First Joint Project with Partner Company Goto Korea."
           description="OmTrans is excited to share the successful delivery of first joint Project cargo after partnership with Goto Japan.The project was moved jointly with Goto Korea Ex Masan Port ( Korea ) to MBPT ( Mumbai ) and further truck down to final destination at Door in Noida. The project consisted of 36 pieces and all the pieces were Over dimension. The heaviest equipment weight was 149 MT & 91 MT."
@@ -286,11 +286,11 @@ function Home() {
 
         <Blog
           img={Blog3}
-          date="15"
-          month="August"
+          date="08"
+          month="September"
           year="2022"
-          title="Delivered 150 Tonnes of Medicines during Covid."
-          description="We take pride in mentioning that during the first wave of Pandemic, we moved over 50 tons of Covid related medicines to Brazil by Air freight maintained in cold chain temperature. It was a challenging task due to lockdown to handle operations at airport with negligible transportation, ground team."
+          title="Saving Freight Cost by 50%"
+          description="With having experience team OmTrans have helped their Exporters in saving 50% freight cost by moving the cargo through Break Bulk to Houston and Baltimore which was really appreciated by the Exporters. OmTrans has successfully delivered 4000 metric tonnes of cargo and monthly moving such volume of cargo to Houston & Baltimore through Break Bulk."
         />
 
         <div className=" m-auto text-center py-5">
