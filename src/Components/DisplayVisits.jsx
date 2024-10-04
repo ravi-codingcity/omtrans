@@ -19,7 +19,7 @@ const IncrementingNumber = () => {
 
   return (
     <div>
-      <h1 className="text-lg mt-4 px-2">Users: {number}</h1>
+      <h1 className="text-lg mt-4 px-2">Visitors: {number}</h1>
     </div>
   );
 };
