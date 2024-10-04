@@ -167,28 +167,28 @@ function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram className="hover:text-red-600 cursor-pointer duration-200" />
+              <FaInstagram className="text-red-600 cursor-pointer duration-200 hover:scale-110" />
             </a>
             <a
               href="https://www.facebook.com/omtrans/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook className="hover:text-red-600 cursor-pointer duration-200" />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/om-trans-logistics-limited/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin className="hover:text-red-600 cursor-pointer duration-200" />
+              <FaFacebook className="text-blue-600 cursor-pointer duration-200 hover:scale-110" />
             </a>
             <a
               href="https://in.pinterest.com/om_trans_logistic/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaPinterest className="hover:text-red-600 cursor-pointer duration-200" />
+              <FaPinterest className="text-red-600 cursor-pointer duration-200 hover:scale-110" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/om-trans-logistics-limited/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="text-blue-600 cursor-pointer duration-200 hover:scale-110" />
             </a>
           </div>
         </div>

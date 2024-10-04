@@ -421,7 +421,7 @@ function FCL_sea_import() {
                   {isCustom && (
                     <input
                       type="text"
-                      placeholder="Enter Custom HS Code"
+                      placeholder="Enter HS Code"
                       value={customHSCode}
                       onChange={handleInputChange}
                       className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 ml-2"
@@ -502,7 +502,7 @@ function FCL_sea_import() {
                   type="text"
                   id="Cargo Weight"
                   className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
-                  placeholder="Enter Your Cargo Weight"
+                  placeholder="Enter Cargo Weight"
                   onChange={handleChange}
                 />
               </div>

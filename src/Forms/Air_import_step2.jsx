@@ -775,7 +775,7 @@ function Air_import_step2() {
                     >
                       <option value="" disabled>
                         {form2Data.user_country
-                          ? "Select your state name"
+                          ? "Select your state"
                           : "Select a country first"}
                       </option>
                       {filteredStates.map((state, index) => (

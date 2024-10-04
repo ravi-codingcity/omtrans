@@ -258,7 +258,7 @@ function LCL_sea_import() {
                     type="text"
                     id="port_of_loading"
                     className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
-                    placeholder="Your Port of Loading"
+                    placeholder="Enter Port of Loading"
                     required
                     onChange={handleChange}
                   />
@@ -282,7 +282,7 @@ function LCL_sea_import() {
                     type="text"
                     id="port_of_destination"
                     className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
-                    placeholder="Your Port of Destination"
+                    placeholder="Enter Port of Destination"
                     required
                     onChange={handleChange}
                   />
@@ -314,7 +314,7 @@ function LCL_sea_import() {
                     type="text"
                     id="number_of_pkgs"
                     className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
-                    placeholder="Enter Your Number of PKG"
+                    placeholder="Enter No. of PKG"
                     onChange={handleChange}
                   />
                 </div>
@@ -333,7 +333,7 @@ function LCL_sea_import() {
                     type="text"
                     id="pkg_dimension"
                     className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
-                    placeholder="Enter Your PKG Dimension"
+                    placeholder="Enter PKG Dimension"
                     onChange={handleChange}
                   />
                 </div>
@@ -412,7 +412,7 @@ function LCL_sea_import() {
                   {isCustom && (
                     <input
                       type="text"
-                      placeholder="Enter Custom HS Code"
+                      placeholder="Enter HS Code"
                       value={customHSCode}
                       onChange={handleInputChange}
                       className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2.5 ml-3"
@@ -493,7 +493,7 @@ function LCL_sea_import() {
                   type="text"
                   id="Cargo Weight"
                   className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
-                  placeholder="Enter Your Cargo Weight"
+                  placeholder="Enter Cargo Weight"
                   onChange={handleChange}
                 />
               </div>

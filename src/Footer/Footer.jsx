@@ -22,6 +22,7 @@ import c5 from "../assets/c5.png";
 import c6 from "../assets/c6.png";
 import c7 from "../assets/c7.jpg";
 import c8 from "../assets/c8.jpg";
+import DisplayVisits from "../Components/DisplayVisits";
 
 function Footer() {
   const navigate = useNavigate();
@@ -162,6 +163,7 @@ function Footer() {
               <img src={iso3} alt="" />
               <img src={iso4} alt="" />
             </div>
+            <DisplayVisits />
           </div>
         </div>
       </div>

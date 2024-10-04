@@ -363,7 +363,7 @@ function FCL_sea_export() {
                     type="text"
                     id="stuffing_mode"
                     className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
-                    placeholder="Select your Stuffing Mode"
+                    placeholder="Select Stuffing Mode"
                     onChange={handleChange}
                   >
                     <option value="" disabled selected>
@@ -464,7 +464,7 @@ function FCL_sea_export() {
                   {isCustom && (
                     <input
                       type="text"
-                      placeholder="Enter Custom HS Code"
+                      placeholder="Enter HS Code"
                       value={customHSCode}
                       onChange={handleInputChange}
                       className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 ml-2"
@@ -517,7 +517,7 @@ function FCL_sea_export() {
                     type="text"
                     id="delivery_address"
                     className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
-                    placeholder="In case of term DDP or DAP"
+                    placeholder="In case of DDP or DAP"
                     onChange={handleChange}
                   />
                 </div>
@@ -545,7 +545,7 @@ function FCL_sea_export() {
                   type="text"
                   id="Cargo Weight"
                   className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
-                  placeholder="Enter Your Cargo Weight"
+                  placeholder="Enter Cargo Weight"
                   onChange={handleChange}
                 />
               </div>

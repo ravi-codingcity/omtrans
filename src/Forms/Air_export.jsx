@@ -315,7 +315,7 @@ function Air_export() {
                     type="text"
                     id="number_of_pkgs"
                     className="bg-white focus:ring-white focus:outline-none focus:ring-0 text-gray-900 text-sm rounded-lg p-2 flex-grow ml-2"
-                    placeholder="Enter Number of PKG"
+                    placeholder="Enter No. of PKG"
                     onChange={handleChange}
                   />
                 </div>
