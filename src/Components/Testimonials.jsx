@@ -7,8 +7,7 @@ import Blue_Arrow from "../assets/arrow1.svg";
 import Yellow_Arrow from "../assets/t_arrow.svg";
 import User_1 from "../assets/t2.png";
 import User_2 from "../assets/t1.png";
-import User_3 from "../assets/t1.png";
-import User_4 from "../assets/t4.png";
+
 import Quote from "../assets/quote.svg";
 
 function Testimonials(props) {
@@ -72,7 +71,7 @@ function Testimonials(props) {
         }}
         {...settings}
       >
-        <div className="bg-[#F4F4F4] py-6 px-10 h-[340px]">
+        <div className="bg-[#F4F4F4] py-6 px-10 h-[355px]">
           <div className="flex justify-evenly  py-4">
             <div className="flex items-center">
               <img src={User_1} alt="" className="w-20" />
@@ -101,7 +100,7 @@ faction in providing import services Ex
           </div>
         </div>
 
-        <div className="bg-[#091242] py-6 px-10 flex-wrap  text-white h-[340px]">
+        <div className="bg-[#091242] py-6 px-10 flex-wrap  text-white h-[355px]">
           <div className="flex justify-evenly py-4">
             <div className="flex items-center">
               <img src={User_2} alt="" className="w-20" />

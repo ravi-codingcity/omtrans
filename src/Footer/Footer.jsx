@@ -142,7 +142,7 @@ function Footer() {
             </div>
           </div>
 
-          <div>
+          <div className="mx-1">
             Certification
             <div className="flex  py-2  flex-wrap w-56">
               <img src={c1} alt="" className="px-1 py-1" />
@@ -155,7 +155,7 @@ function Footer() {
               <img src={c8} alt="" className="px-1 py-1" />
             </div>
           </div>
-          <div>
+          <div className="flex flex-col mx-1">
             ISO Certification
             <div className="flex space-x-2 py-2">
               <img src={iso1} alt="" />

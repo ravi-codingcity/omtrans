@@ -1,25 +1,34 @@
 import React, { useState, useEffect } from "react";
 
 const IncrementingNumber = () => {
-  // Initialize state
-  const [number, setNumber] = useState(825);
+  const [number, setNumber] = useState(0);
 
   useEffect(() => {
-    // Function to increment the number
-    const incrementNumber = () => {
-      setNumber((prevNumber) => prevNumber + 1); // Increase by 1 for demonstration
+    // Fetch the visitor count from the backend
+    const fetchVisitorCount = async () => {
+      try {
+        const response = await fetch("https://new-backend-yulp.onrender.com/api/visitorCount");
+        const data = await response.json();
+        setNumber(data.visitorCount);
+      } catch (error) {
+        console.error("Error fetching visitor count:", error);
+      }
     };
 
-    // Set interval to increment the number every 2 hours (7200000 milliseconds)
-    const intervalId = setInterval(incrementNumber, 7200000);
+    // Fetch the visitor count when the component mounts
+    fetchVisitorCount();
 
-    // Cleanup function to clear the interval on component unmount
+    // Optionally set an interval to refresh the count every hour (if needed)
+    const intervalId = setInterval(fetchVisitorCount, 1800000);
+
+    // Cleanup the interval on component unmount
     return () => clearInterval(intervalId);
-  }, []); // Empty dependency array ensures it runs only on mount
+  }, []);
 
   return (
-    <div>
-      <h1 className="text-lg mt-4 px-2">Visitors: {number}</h1>
+    <div className="flex flex-col text-5xl sm:pt-12 sm:px-10 sm:items-center sm:mt-12">
+      <div className="text-4xl">Visitors</div>
+      <div>{number}</div>
     </div>
   );
 };

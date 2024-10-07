@@ -219,7 +219,7 @@ function Home() {
           />
           <Img_card
             title="IT Infrastructure & Usage"
-            description="Om Trans Logistics stands as a distinguished player in the world of IT and consumer electronics, providing specialized solutions tailored to specific needs."
+            description="OmTrans Logistics stands as a distinguished player in the world of IT and consumer electronics, providing specialized solutions tailored to specific needs."
             img={P6}
             delay={0.6}
           />
