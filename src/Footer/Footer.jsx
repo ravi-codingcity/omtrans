@@ -78,30 +78,13 @@ function Footer() {
                 <li
                   className="py-2"
                   onClick={() => {
-                    navigate("/About_us");
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  About Us
-                </li>
-                <li
-                  className="py-2"
-                  onClick={() => {
                     navigate("/careers");
                     window.scrollTo(0, 0);
                   }}
                 >
                   Careers
                 </li>
-                <li
-                  className="py-2"
-                  onClick={() => {
-                    navigate("/sustainability");
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  Sustainability
-                </li>
+
                 <li
                   className="py-2"
                   onClick={() => {
@@ -112,13 +95,13 @@ function Footer() {
                   Contact
                 </li>
                 <li
-                  className="py-2 cursor-pointer"
+                  className="py-2"
                   onClick={() => {
-                    navigate("/News");
+                    navigate("/About_us");
                     window.scrollTo(0, 0);
                   }}
                 >
-                  News
+                  About Us
                 </li>
                 <li
                   className="py-2 cursor-pointer"
@@ -137,6 +120,24 @@ function Footer() {
                   }}
                 >
                   Job Portal
+                </li>
+                <li
+                  className="py-2 cursor-pointer"
+                  onClick={() => {
+                    navigate("/privacy_policy");
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  Privacy Policy
+                </li>
+                <li
+                  className="py-2"
+                  onClick={() => {
+                    navigate("/terms_and_condition");
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  Terms and Conditions
                 </li>
               </ul>
             </div>

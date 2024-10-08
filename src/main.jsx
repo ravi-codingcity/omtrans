@@ -32,6 +32,8 @@ import Clients from "./Components/Clients.jsx";
 import JobPortal from "./Components/Job_portal.jsx";
 import Login from "./Components/Login.jsx";
 import Register from "./Components/Register.jsx";
+import Privacy_policy from "./Components/Privacy_policy.jsx";
+import Terms_and_condition from "./Components/Terms_and_condition.jsx";
 
 const router = createBrowserRouter([
   {
@@ -177,6 +179,14 @@ const router = createBrowserRouter([
   {
     path: "/fcl_sea_import/step2",
     element: <FCL_sea_import_step2 />,
+  },
+  {
+    path: "/privacy_policy",
+    element: <Privacy_policy />,
+  },
+  {
+    path: "/terms_and_condition",
+    element: <Terms_and_condition />,
   },
 ]);
 

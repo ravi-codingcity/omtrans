@@ -42,7 +42,6 @@ import warehouse from "../assets/GS_warehouse.png";
 import staff from "../assets/GS_staff.png";
 import truck from "../assets/GS_truck.png";
 import Scroll_Top from "../Components/Scroll_Top";
-import  generateSitemap  from "../Components/generateSitemap";
 
 function Home() {
   const navigate = useNavigate();
@@ -344,7 +343,6 @@ function Home() {
           </button>
         </div>
       </div>
-      <button onClick={generateSitemap}>Generate Sitemap</button>
       <Scroll_Top />
       <Footer />
     </div>

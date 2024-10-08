@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const IncrementingNumber = () => {
-  const [visitorCount, setVisitorCount] = useState(905); // Default starting value
+  const [visitorCount, setVisitorCount] = useState(null); // Default starting value
 
   useEffect(() => {
     const fetchVisitorCount = async () => {
