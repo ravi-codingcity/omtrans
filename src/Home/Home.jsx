@@ -42,6 +42,7 @@ import warehouse from "../assets/GS_warehouse.png";
 import staff from "../assets/GS_staff.png";
 import truck from "../assets/GS_truck.png";
 import Scroll_Top from "../Components/Scroll_Top";
+import { Helmet } from "react-helmet";
 
 function Home() {
   const navigate = useNavigate();
@@ -59,6 +60,31 @@ function Home() {
       <div>
         <QuoteRequest />
       </div>
+
+      {/* SEO */}
+      <Helmet>
+        <title>OmTrans Logistics Ltd. | Best Freight Forwarding Company</title>
+        <meta
+          name="description"
+          content="OmTrans is your reliable partner in global logistics solutions. Operating in over 150 countries worldwide, OmTrans offers a comprehensive range of freight forwarding services through our offices and strategic partnerships"
+        />
+
+        <meta
+          name="keywords"
+          content="Best Freight Forwarding Company in india , Freight Forwarding Company in Delhi, Import Export Conpany in Delhi,  Freight Forwarding Company, Best global logistics solutions
+Top freight forwarding services,
+International shipping logistics
+Comprehensive supply chain solutions,
+Freight forwarding companies,
+Affordable global shipping services,
+Customs clearance experts,
+Import-export logistics solutions,
+Logistics and distribution services,
+NVOCC services provider,
+Cross-border logistics solutions,
+Freight management experts"
+        />
+      </Helmet>
 
       {/* Industries we serve */}
 

@@ -25,10 +25,25 @@ import warehouse from "../assets/GS_warehouse.png";
 import staff from "../assets/GS_staff.png";
 import truck from "../assets/GS_truck.png";
 import Scroll_Top from "../Components/Scroll_Top";
+import { Helmet } from "react-helmet";
 
 function Project_cargo_ODC_Handle() {
   return (
     <div>
+      {/* SEO */}
+      <Helmet>
+        <title>Project Cargo & ODC Handle | OmTrans Logistics Ltd.</title>
+        <meta
+          name="description"
+          content="OmTrans Logistics specializes in providing solutions for the safe transportation of any over-dimensional cargo, as well as heavy and bulk cargo."
+        />
+
+        <meta
+          name="keywords"
+          content="Best Project Cargo & ODC Handle in india , Project Cargo & ODC Handle in Delhi, Import Export Company in Delhi,  Project Cargo & ODC Handle"
+        />
+      </Helmet>
+
       <Navbar />
       {/* Header */}
       <div
@@ -235,7 +250,7 @@ function Project_cargo_ODC_Handle() {
           </div>
         </div>
       </div>
-      <Scroll_Top/>
+      <Scroll_Top />
       {/* Footer */}
       <Footer />
     </div>

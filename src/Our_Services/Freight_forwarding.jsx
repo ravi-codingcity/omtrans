@@ -22,10 +22,27 @@ import staff from "../assets/GS_staff.png";
 import truck from "../assets/GS_truck.png";
 import Scroll_Top from "../Components/Scroll_Top";
 import Extra_features from "../Components/Extra_features";
+import { Helmet } from "react-helmet";
 
 function Freight_forwarding() {
   return (
     <div>
+      {/* SEO */}
+      <Helmet>
+        <title>
+          Best Freight Forwarding Services in India | OmTrans Logistics Ltd.
+        </title>
+        <meta
+          name="description"
+          content="OmTrans is your trusted partner in global logistics solutions. With an international footprint spanning over 150+ countries, We specialize in providing a full range of logistics services, including air, ocean, and land transportation."
+        />
+
+        <meta
+          name="keywords"
+          content="Best Freight Forwarding Services in india , Freight Forwarding Services in Delhi, Import Export Company in Delhi,  Freight Forwarding Services"
+        />
+      </Helmet>
+
       <Navbar />
       {/* Header */}
       <div

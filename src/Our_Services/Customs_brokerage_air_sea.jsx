@@ -22,10 +22,25 @@ import staff from "../assets/GS_staff.png";
 import truck from "../assets/GS_truck.png";
 import Extra_features from "../Components/Extra_features";
 import Scroll_Top from "../Components/Scroll_Top";
+import { Helmet } from "react-helmet";
 
 function Customs_brokerage_air_sea() {
   return (
     <div>
+      {/* SEO */}
+      <Helmet>
+        <title>Best Customs Brokerage Services | OmTrans Logistics Ltd.</title>
+        <meta
+          name="description"
+          content="OmTrans Our Customs Knowledge help ease Import and Export regulations and paper work in record time for all of your shipments."
+        />
+
+        <meta
+          name="keywords"
+          content="Best Customs Brokerage Services in india , Customs Brokerage Services in Delhi, Import Export Company in Delhi,  Customs Brokerage Services"
+        />
+      </Helmet>
+
       <Navbar />
       {/* Header */}
       <div

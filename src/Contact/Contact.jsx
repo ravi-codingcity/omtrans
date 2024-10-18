@@ -11,6 +11,7 @@ import Companies_logo from "../Components/Companies_logo";
 import Office_Card from "../Components/Office_Card";
 import emailjs from "@emailjs/browser";
 import Scroll_Top from "../Components/Scroll_Top";
+import { Helmet } from "react-helmet";
 
 function Contact() {
   const form = useRef();
@@ -39,6 +40,29 @@ function Contact() {
 
   return (
     <div>
+      {/* SEO */}
+      <Helmet>
+        <title>Contact Us | OmTrans Logistics Ltd.</title>
+        <meta
+          name="description"
+          content="Get in touch with OmTrans, a leading Freight Forwarding company offering seamless import-export solutions. Our experts are here to assist you with global logistics, customs clearance, and supply chain management. Contact us today for personalized service and efficient cargo handling."
+        />
+
+        <meta
+          name="keywords"
+          content="Freight forwarding services ,
+Global logistics solutions,
+Import-export services,
+International cargo shipping,
+Supply chain management,
+Customs clearance assistance,
+Freight forwarding company India,
+Efficient cargo handling,
+International freight forwarding,
+Om Trans logistics services"
+        />
+      </Helmet>
+
       <Navbar />
       <div
         className="bg-no-repeat bg-center bg-cover "

@@ -4,6 +4,7 @@ import BgImg from "../assets/S_img.jpg";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import CareerForm from "./Careers_form";
+import { Helmet } from "react-helmet";
 
 function Careers() {
   const [jobs, setJobs] = useState([]);
@@ -27,6 +28,34 @@ function Careers() {
 
   return (
     <div>
+      {/* SEO */}
+      <Helmet>
+        <title>Careers | OmTrans Logistics Ltd.</title>
+        <meta
+          name="description"
+          content="Explore exciting career opportunities at OmTrans, a leading player in the Freight Forwarding and Import-Export industry. Join our dynamic team and be a part of a global logistics network dedicated to delivering seamless supply chain solutions."
+        />
+
+        <meta
+          name="keywords"
+          content="OmTrans careers,
+Freight forwarding jobs,
+Logistics industry careers,
+Import-export jobs,
+Supply chain management careers,
+OmTrans job opportunities,
+Freight logistics careers,
+Global logistics jobs,
+Careers in freight forwarding,
+Logistics and supply chain jobs,
+Import-export industry careers,
+Freight forwarding recruitment,
+OmTrans job openings,
+Logistics careers India,
+Supply chain and logistics vacancies"
+        />
+      </Helmet>
+
       <Navbar />
       <div
         className="bg-no-repeat bg-center bg-cover"
@@ -50,8 +79,8 @@ function Careers() {
           </h1>
           <p className="text-xl font-semibold py-3">
             Launch your career at OmTrans, World's leading Import Export and
-            Logistics powerhouse! We offer endless opportunities to grow and
-            make your mark in the industry:
+            Logistics Expert! We offer endless opportunities to grow and make
+            your mark in the industry:
           </p>
         </div>
 

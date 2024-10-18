@@ -22,11 +22,25 @@ import { GiTakeMyMoney } from "react-icons/gi";
 import { LiaToolsSolid } from "react-icons/lia";
 import { BiSupport } from "react-icons/bi";
 import Scroll_Top from "../Components/Scroll_Top";
-
+import { Helmet } from "react-helmet";
 
 function Supply_chain_management() {
   return (
     <div>
+      {/* SEO */}
+      <Helmet>
+        <title>Supply Chain Management | OmTrans Logistics Ltd.</title>
+        <meta
+          name="description"
+          content="OmTrans Supply Chain Management (SCM) services to help cater to your logistics complexities. Our local expertise along with our global infrastructure provides you with a strong supply chain backbone that will help you grow your business and exceed customer expectations."
+        />
+
+        <meta
+          name="keywords"
+          content="Best Supply Chain Management in India , Supply Chain Management in Delhi, Import Export Company in Delhi,  Supply Chain Management , Global Supply Chain , Best Global Supply Chain Services"
+        />
+      </Helmet>
+
       <Navbar />
       {/* Header */}
       <div
@@ -133,7 +147,7 @@ function Supply_chain_management() {
       {/* Services 2*/}
 
       <div className="bg-gray-100 py-4">
-      <div className="flex sm:flex-row flex-col justify-center items-center max-w-screen-lg m-auto sm:py-10 py-7 px-3 sm:px-0">
+        <div className="flex sm:flex-row flex-col justify-center items-center max-w-screen-lg m-auto sm:py-10 py-7 px-3 sm:px-0">
           <div className="pt-0 sm:pt-0">
             <img src={FF_2} alt="about us image" />
           </div>
@@ -222,7 +236,7 @@ function Supply_chain_management() {
           </div>
         </div>
       </div>
-      <Scroll_Top/>
+      <Scroll_Top />
       {/* Footer */}
       <Footer />
     </div>

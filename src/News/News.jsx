@@ -8,10 +8,25 @@ import Blog4 from "../assets/blog_img_4.jpeg";
 import Blog5 from "../assets/blog_img_5.jpeg";
 import Blog from "../Components/Blog";
 import Scroll_Top from "../Components/Scroll_Top";
+import { Helmet } from "react-helmet";
 
 function News() {
   return (
     <div>
+      {/* SEO */}
+      <Helmet>
+        <title>News | OmTrans Logistics Ltd.</title>
+        <meta
+          name="description"
+          content="Stay updated with the latest achievements of OmTrans in the freight forwarding industry. Discover our successful large-scale project deliveries, import-export milestones, and innovative integration projects that are transforming global logistics and supply chain management."
+        />
+
+        <meta
+          name="keywords"
+          content="OmTrans logistics achievements, Freight forwarding projects, Global logistics updates, Import-export success stories, Large-scale freight forwarding, Supply chain integration, Freight forwarding industry news, Cargo handling milestones, Logistics technology integration, Global shipping solutions, Supply chain management news, Freight forwarding innovations, Logistics project updates, Import-export logistics, Global transportation news"
+        />
+      </Helmet>
+
       <Navbar />
       <div
         className="bg-no-repeat bg-center bg-cover "
@@ -68,8 +83,6 @@ function News() {
           title="Saving Freight Cost by 50%"
           description="With having experience team OmTrans have helped their Exporters in saving 50% freight cost by moving the cargo through Break Bulk to Houston and Baltimore which was really appreciated by the Exporters. OmTrans has successfully delivered 4000 metric tonnes of cargo and monthly moving such volume of cargo to Houston & Baltimore through Break Bulk."
         />
-
-       
       </div>
       <Scroll_Top />
       <Footer />

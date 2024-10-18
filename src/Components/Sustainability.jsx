@@ -8,7 +8,7 @@ import { GiLifeSupport } from "react-icons/gi";
 import { GoLaw } from "react-icons/go";
 import { BiLineChart } from "react-icons/bi";
 import Scroll_Top from "../Components/Scroll_Top";
-
+import { Helmet } from "react-helmet";
 import Footer from "../Footer/Footer";
 import { useNavigate } from "react-router-dom";
 
@@ -17,6 +17,20 @@ function sustainability() {
 
   return (
     <div>
+      {/* SEO */}
+      <Helmet>
+        <title>Sustainability | OmTrans Logistics Ltd.</title>
+        <meta
+          name="description"
+          content="Discover OmTrans' commitment to sustainability in the Freight Forwarding and Import-Export industry. Learn about our eco-friendly initiatives, dedication to reducing carbon footprints, and our moral responsibility towards nature. Join us in building a greener future with sustainable logistics solutions"
+        />
+
+        <meta
+          name="keywords"
+          content="Sustainable logistics solutions, Eco-friendly freight forwarding, Green freight forwarding services, Sustainable import-export practices, Carbon footprint reduction in logistics, Environmentally responsible logistics, Green supply chain management, Sustainable shipping solutions, Eco-conscious freight services, Sustainable transportation in logistics"
+        />
+      </Helmet>
+
       <Navbar />
       {/* Header */}
       <div

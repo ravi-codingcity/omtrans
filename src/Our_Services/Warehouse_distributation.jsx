@@ -22,11 +22,25 @@ import staff from "../assets/GS_staff.png";
 import truck from "../assets/GS_truck.png";
 import Extra_features from "../Components/Extra_features";
 import Scroll_Top from "../Components/Scroll_Top";
-
+import { Helmet } from "react-helmet";
 
 function Warehouse_distribution() {
   return (
     <div>
+      {/* SEO */}
+      <Helmet>
+        <title>Warehouse and Distribution Services | OmTrans Logistics Ltd.</title>
+        <meta
+          name="description"
+          content="OmTrans Warehouse and Distribution services to help cater to your logistics complexities. Our local expertise along with our global infrastructure provides you with a strong supply chain backbone that will help you grow your business and exceed customer expectations."
+        />
+
+        <meta
+          name="keywords"
+          content="Best Warehouse and Distribution Services in India , Warehouse and Distribution Services in Delhi,  Warehouse and Distribution Services, Inventory Management Services, Best Inventory Management Services"
+        />
+      </Helmet>
+
       <Navbar />
       {/* Header */}
       <div
@@ -248,7 +262,7 @@ function Warehouse_distribution() {
           </div>
         </div>
       </div>
-<Scroll_Top/>
+      <Scroll_Top />
       {/* Footer */}
       <Footer />
     </div>
