@@ -17,6 +17,7 @@ import india_flag_icon from "../assets/indian_flag.png";
 import Navbar from "../Navbar/Navbar";
 import BgImg from "../assets/our_services.jpg";
 import Footer from "../Footer/Footer";
+import { Helmet } from "react-helmet";
 
 const Network = () => {
   const [hoveredBox, setHoveredBox] = useState(null);
@@ -31,6 +32,30 @@ const Network = () => {
 
   return (
     <div>
+      {/* SEO */}
+      <Helmet>
+        <title>OmTrans Logistics Ltd. | Best Freight Forwarding Company</title>
+        <meta
+          name="description"
+          content="OmTrans featuring a comprehensive map of our branches and international associates in the Freight Forwarding and Import-Export industry. Discover our global presence and commitment to seamless logistics solutions, connecting you with reliable services worldwide"
+        />
+
+        <meta
+          name="keywords"
+          content="Best Freight Forwarding Company in india , Freight Forwarding Company in Delhi, Import Export Conpany in Delhi,  Freight Forwarding Company, Best global logistics solutions
+Freight Forwarding Network,
+Import Export Services,
+Global Logistics Network,
+International Freight Forwarders,
+Supply Chain Solutions,
+Logistics Branches Map,
+Freight Forwarding Agents,
+Global Shipping Partners,
+Import Export Logistics,
+Network of Freight Services,
+International Shipping Solutions"
+        />
+      </Helmet>
       <Navbar />
 
       <div

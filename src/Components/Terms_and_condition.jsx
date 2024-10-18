@@ -3,10 +3,20 @@ import Navbar from "../Navbar/Navbar";
 import BgImg from "../assets/S_img.jpg";
 import Scroll_Top from "../Components/Scroll_Top";
 import Footer from "../Footer/Footer";
+import { Helmet } from "react-helmet";
 
 function Terms_and_condition() {
   return (
     <div>
+      {/* SEO */}
+      <Helmet>
+        <title>Terms and Conditions | OmTrans Logistics Ltd.</title>
+        <meta
+          name="description"
+          content="OmTrans' comprehensive Terms and Conditions governing our Freight Forwarding and Import-Export services. Understand our policies, rules, and guidelines designed to ensure smooth operations and customer satisfaction in the logistics industry."
+        />
+      </Helmet>
+
       <Navbar />
       <div
         className="bg-no-repeat bg-center bg-cover "

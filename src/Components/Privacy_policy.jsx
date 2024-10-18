@@ -3,10 +3,20 @@ import Navbar from "../Navbar/Navbar";
 import BgImg from "../assets/S_img.jpg";
 import Scroll_Top from "../Components/Scroll_Top";
 import Footer from "../Footer/Footer";
+import { Helmet } from "react-helmet";
 
 function Privacy_policy() {
   return (
     <div>
+      {/* SEO */}
+      <Helmet>
+        <title>Privacy Policy | OmTrans Logistics Ltd.</title>
+        <meta
+          name="description"
+          content="Om Trans's commitment to safeguarding your privacy in the freight forwarding and import-export industry. Our privacy policy outlines how we collect, use, and protect your personal information, ensuring transparency and trust. Learn about your rights and our practices for a secure experience."
+        />
+      </Helmet>
+
       <Navbar />
       <div
         className="bg-no-repeat bg-center bg-cover "
@@ -61,7 +71,7 @@ function Privacy_policy() {
         </div>
         <div className="py-2">
           Except as outlined in this privacy policy, <b>OmTrans Logistics </b>
-           will not disclose any personally identifiable information without
+          will not disclose any personally identifiable information without
           consent unless legally required to do so or if we believe it is
           necessary to protect our rights, property, or personal safety.
         </div>

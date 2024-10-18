@@ -24,6 +24,7 @@ import warehouse from "../assets/GS_warehouse.png";
 import staff from "../assets/GS_staff.png";
 import truck from "../assets/GS_truck.png";
 import Scroll_Top from "../Components/Scroll_Top";
+import { Helmet } from "react-helmet";
 
 function About_us() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -38,6 +39,28 @@ function About_us() {
 
   return (
     <div>
+      {/* SEO */}
+      <Helmet>
+        <title>About Us | OmTrans Logistics Ltd.</title>
+        <meta
+          name="description"
+          content="OmTrans, a leader in the Freight Forwarding and Import Export industry, dedicated to providing seamless logistics solutions. Explore our extensive overview, including our branch locations and partnerships with esteemed associate companies, as we strive to enhance your shipping experience with reliability and expertise."
+        />
+
+        <meta
+          name="keywords"
+          content="Best Freight Forwarding Company in india , Freight Forwarding Company in Delhi, Import Export Conpany in Delhi,  Freight Forwarding Company, Best global logistics solutions
+OmTrans logistics,
+Freight forwarding services,
+Import export solutions,
+Logistics and transportation,
+Supply chain management,
+Global shipping services,
+International freight forwarding,
+OmTrans branches"
+        />
+      </Helmet>
+
       <Navbar />
       <div
         className="bg-no-repeat bg-center bg-cover "
