@@ -88,7 +88,7 @@ function Footer() {
                 <li
                   className="py-2"
                   onClick={() => {
-                    navigate("/contact");
+                    navigate("/contact-us");
                     window.scrollTo(0, 0);
                   }}
                 >

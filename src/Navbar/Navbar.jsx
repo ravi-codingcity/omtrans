@@ -151,7 +151,7 @@ function Navbar() {
           </NavLink>
 
           <NavLink
-            to="/contact"
+            to="/contact-us"
             className="relative pb-1 px-2 hover:border-b-1 border-[#ff2b2b] transition-all duration-200 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#ff2b2b] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200"
           >
             Contact

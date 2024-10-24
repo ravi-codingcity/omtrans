@@ -258,7 +258,7 @@ Om Trans logistics services"
         />
         <Office_Card
           office="OmTrans in Ahmedabad"
-          address="Office No. B-705 , Sivanata One, Opposite Bank of Baroda, Paldi, Ahmedabad - 380007"
+          address="Office No. B-705 , Sivanta One, Opposite Bank of Baroda, Paldi, Ahmedabad - 380007"
           mail="info@omtrans.in"
         />
         <Office_Card

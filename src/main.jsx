@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Our_Services from "./Our_Services/Our_services.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home/Home.jsx";
@@ -40,12 +39,9 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
   },
+
   {
-    path: "/services",
-    element: <Our_Services />,
-  },
-  {
-    path: "/contact",
+    path: "/contact-us/",
     element: <Contact />,
   },
   {
@@ -59,6 +55,14 @@ const router = createBrowserRouter([
   {
     path: "/freight_forwarding",
     element: <Freight_forwarding />,
+  },
+  {
+    path: "/servicecat/sea-freight-in-india/",
+    element: <Freight_forwarding />,
+  },
+  {
+    path: "/services/",
+    element: <Home />,
   },
   {
     path: "/supply_chain_management",
