@@ -9,6 +9,8 @@ import Industrial from "../assets/industry.jpg";
 import Consumer from "../assets/consumer.jpg";
 import Defence from "../assets/defence.jpg";
 import Chemical from "../assets/chemical.jpg";
+import Steel from "../assets/Steel_Industry.jpg";
+import Break_Bulk from "../assets/Break_Bulk.jpg";
 import Image1 from "../assets/container.jpg";
 import Icon_5 from "../assets/w_icon7.png";
 import Icon_6 from "../assets/w_icon8.png";
@@ -92,8 +94,8 @@ Freight management experts"
         <h2 className="text-4xl font-bold text-center text-red-600 py-4">
           Industries We Serve
         </h2>
-        <div className="max-w-screen-xl m-auto grid grid-rows-2 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 py-4 text-center items-center justify-center">
-          {/* Each card is individually animated */}
+        <div className="max-w-screen-xl m-auto flex flex-wrap justify-evenly text-center">
+          {/* Each card is individually animated grid grid-rows-2 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 py-4 text-center items-center justify-center */}
           <Industry_tab
             icon={Automotive}
             title="Automotive"
@@ -141,6 +143,18 @@ Freight management experts"
             title="Chemical"
             description="Moving the Hazardous Cargo under the Regulatory, Safety and Security Compliance, with dedicated solutions to maintain product integrity during transportation."
             delay={0.8}
+          />
+          <Industry_tab
+            icon={Steel}
+            title="Steel"
+            description="OmTrans provides efficient global freight solutions for the steel industry, moving heavy steel from mills to warehouses, distribution centres, or direct to manufacturers."
+            delay={0.9}
+          />
+          <Industry_tab
+            icon={Break_Bulk}
+            title="Bulk/Break Bulk Broking"
+            description="We specializes in transporting large-scale shipments globally. Let us streamline your bulk cargo needs with our expert logistics services."
+            delay={0.9}
           />
         </div>
       </div>

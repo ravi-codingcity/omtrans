@@ -20,7 +20,7 @@ function Industry_tab({ icon, title, description, delay }) {
       animate={inView ? "visible" : "hidden"}
       variants={cardVariants}
     >
-      <div className="bg-slate-200 mx-3 my-3 duration-300 border-red-500 rounded-lg overflow-hidden hover:shadow-red-700 hover:shadow-[0_0px_20px_rgb(0,0,0,0.13)]">
+      <div className="bg-slate-200 mx-3 my-3 duration-300 border-red-500 rounded-lg overflow-hidden hover:shadow-red-700 hover:shadow-[0_0px_20px_rgb(0,0,0,0.13)] w-72">
         <img src={icon} alt="" className="m-auto" />
         <h1 className="text-xl font-bold py-4 text-red-600">{title}</h1>
         <p className="px-3 pb-6 h-[135px]">{description}</p>
