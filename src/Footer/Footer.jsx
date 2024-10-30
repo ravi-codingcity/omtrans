@@ -37,134 +37,136 @@ function Footer() {
       </div>
 
       <div className="bg-[#091242] py-8">
-        <div className="flex  flex-col sm:flex-row items-flex-start justify-evenly text-2xl font-bold text-white px-2 sm:px-0">
-          <div className="text-base font-normal text-white sm:w-72 w-4/5">
-            <img src={logo} alt="" className="w-36 pb-2" />
-            <p>
-              OmTrans has developed a complete range of services to respond to
-              the logistics and transportation needs comprising of Air, Ocean
-              and Land transportation.
-            </p>
-            <div className="flex">
-              <div className="py-4 text-white">
-                <div className="flex  items-center  pb-3">
-                  <div className="bg-[#273270] py-3 px-3 rounded-full mr-2">
-                    <CiMail className=" text-[#F6B426] text-2xl" />
+        <div className="max-w-screen-xl m-auto px-8">
+          <div className="flex  flex-col sm:flex-row items-flex-start justify-evenly text-2xl font-bold text-white px-2 sm:px-0">
+            <div className="text-base font-normal text-white sm:w-72 w-4/5">
+              <img src={logo} alt="" className="w-36 pb-2" />
+              <p>
+                OmTrans has developed a complete range of services to respond to
+                the logistics and transportation needs comprising of Air, Ocean
+                and Land transportation.
+              </p>
+              <div className="flex">
+                <div className="py-4 text-white">
+                  <div className="flex  items-center  pb-3">
+                    <div className="bg-[#273270] py-3 px-3 rounded-full mr-2">
+                      <CiMail className=" text-[#F6B426] text-2xl" />
+                    </div>
+                    <p className="font-medium	 items-center ">
+                      Email
+                      <br />
+                      <span className="font-normal">info@omtrans.in</span>
+                    </p>
                   </div>
-                  <p className="font-medium	 items-center ">
-                    Email
-                    <br />
-                    <span className="font-normal">info@omtrans.in</span>
-                  </p>
-                </div>
-                <div className="flex  items-center  pb-3">
-                  <div className="bg-[#273270] py-3 px-3 rounded-full mr-2">
-                    <IoCallOutline className=" text-[#F6B426] text-2xl" />
+                  <div className="flex  items-center  pb-3">
+                    <div className="bg-[#273270] py-3 px-3 rounded-full mr-2">
+                      <IoCallOutline className=" text-[#F6B426] text-2xl" />
+                    </div>
+                    <p className="font-medium	 items-center ">
+                      Call Us
+                      <br />
+                      <span className="font-normal">+91-11-48316700</span>
+                    </p>
                   </div>
-                  <p className="font-medium	 items-center ">
-                    Call Us
-                    <br />
-                    <span className="font-normal">+91-11-48316700</span>
-                  </p>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="px-4 cursor-pointer">
-            <div>Navigation</div>
-            <div>
-              <ul className="font-normal text-base list-none">
-                <li
-                  className="py-2"
-                  onClick={() => {
-                    navigate("/careers");
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  Careers
-                </li>
+            <div className="px-4 cursor-pointer">
+              <div>Navigation</div>
+              <div>
+                <ul className="font-normal text-base list-none">
+                  <li
+                    className="py-2"
+                    onClick={() => {
+                      navigate("/careers");
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    Careers
+                  </li>
 
-                <li
-                  className="py-2"
-                  onClick={() => {
-                    navigate("/contact-us");
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  Contact
-                </li>
-                <li
-                  className="py-2"
-                  onClick={() => {
-                    navigate("/About_us");
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  About Us
-                </li>
-                <li
-                  className="py-2 cursor-pointer"
-                  onClick={() => {
-                    navigate("/clients");
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  Our Clients
-                </li>
-                <li
-                  className="py-2 cursor-pointer"
-                  onClick={() => {
-                    navigate("/log-in");
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  Job Portal
-                </li>
-                <li
-                  className="py-2 cursor-pointer"
-                  onClick={() => {
-                    navigate("/privacy_policy");
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  Privacy Policy
-                </li>
-                <li
-                  className="py-2"
-                  onClick={() => {
-                    navigate("/terms_and_condition");
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  Terms and Conditions
-                </li>
-              </ul>
+                  <li
+                    className="py-2"
+                    onClick={() => {
+                      navigate("/contact-us");
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    Contact
+                  </li>
+                  <li
+                    className="py-2"
+                    onClick={() => {
+                      navigate("/About_us");
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    About Us
+                  </li>
+                  <li
+                    className="py-2 cursor-pointer"
+                    onClick={() => {
+                      navigate("/clients");
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    Our Clients
+                  </li>
+                  <li
+                    className="py-2 cursor-pointer"
+                    onClick={() => {
+                      navigate("/log-in");
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    Job Portal
+                  </li>
+                  <li
+                    className="py-2 cursor-pointer"
+                    onClick={() => {
+                      navigate("/privacy_policy");
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    Privacy Policy
+                  </li>
+                  <li
+                    className="py-2"
+                    onClick={() => {
+                      navigate("/terms_and_condition");
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    Terms and Conditions
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
 
-          <div className="mx-1">
-            Certification
-            <div className="flex  py-2  flex-wrap w-56">
-              <img src={c1} alt="" className="px-1 py-1" />
-              <img src={c2} alt="" className="px-1 py-1" />
-              <img src={c3} alt="" className="px-1 py-1" />
-              <img src={c4} alt="" className="px-1 py-1" />
-              <img src={c5} alt="" className="px-1 py-1" />
-              <img src={c6} alt="" className="px-1 py-1" />
-              <img src={c7} alt="" className="px-1 py-1" />
-              <img src={c8} alt="" className="px-1 py-1" />
+            <div className="mx-1">
+              Certification
+              <div className="flex  py-2  flex-wrap w-56">
+                <img src={c1} alt="" className="px-1 py-1" />
+                <img src={c2} alt="" className="px-1 py-1" />
+                <img src={c3} alt="" className="px-1 py-1" />
+                <img src={c4} alt="" className="px-1 py-1" />
+                <img src={c5} alt="" className="px-1 py-1" />
+                <img src={c6} alt="" className="px-1 py-1" />
+                <img src={c7} alt="" className="px-1 py-1" />
+                <img src={c8} alt="" className="px-1 py-1" />
+              </div>
             </div>
-          </div>
-          <div className="flex flex-col mx-1">
-            ISO Certification
-            <div className="flex space-x-2 py-2">
-              <img src={iso1} alt="" />
-              <img src={iso2} alt="" />
-              <img src={iso3} alt="" />
-              <img src={iso4} alt="" />
+            <div className="flex flex-col mx-1">
+              ISO Certification
+              <div className="flex space-x-2 py-2">
+                <img src={iso1} alt="" />
+                <img src={iso2} alt="" />
+                <img src={iso3} alt="" />
+                <img src={iso4} alt="" />
+              </div>
+              <DisplayVisits />
             </div>
-            <DisplayVisits />
           </div>
         </div>
       </div>

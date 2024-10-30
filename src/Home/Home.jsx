@@ -26,7 +26,7 @@ import Icon_9 from "../assets/w_icon3.png";
 import Icon_10 from "../assets/w_icon4.png";
 import Blog1 from "../assets/blog_img_4.jpeg";
 import Blog2 from "../assets/blog_img_5.jpeg";
-import Blog3 from "../assets/Blog_6.jpg";
+import Blog3 from "../assets/Blog_7.jpeg";
 import Footer from "../Footer/Footer";
 import Img_card from "../Components/Img_card";
 import Testimonials from "../Components/Testimonials";
@@ -236,9 +236,8 @@ Freight management experts"
             }}
             delay={0.3}
           />
-
           <Img_card
-            title="Project Cargo & ODC Handle"
+            title="Capital Goods and Projects"
             description="OmTrans offers specializing in transporting oversized and heavy equipment efficiently across the globe."
             img={P4}
             onClick={() => {
@@ -326,11 +325,11 @@ Freight management experts"
 
         <Blog
           img={Blog3}
-          date="08"
+          date="30"
           month="September"
-          year="2022"
-          title="Saving Freight Cost by 50%"
-          description="With having experience team OmTrans have helped their Exporters in saving 50% freight cost by moving the cargo through Break Bulk to Houston and Baltimore which was really appreciated by the Exporters. OmTrans has successfully delivered 4000 metric tonnes of cargo and monthly moving such volume of cargo to Houston & Baltimore through Break Bulk."
+          year="2024"
+          title="Opening Soon Warehouse in Banchari Village ( Haryana )"
+          description="OmTrans is thrilled to announce the opening of our first joint venture warehouse with at Banchari Village ( Haryana ), located on the main Faridabad-Agra Road, set to be fully operational by January 14. This strategically located facility is designed to meet diverse storage needs with modern infrastructure, ample space, and robust security. With streamlined logistics access and a dedicated team."
         />
 
         <div className=" m-auto text-center py-5">
